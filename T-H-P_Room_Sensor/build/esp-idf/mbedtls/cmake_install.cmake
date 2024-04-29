@@ -1,4 +1,4 @@
-# Install script for directory: C:/esp4.4/frameworks/esp-idf-v4.4.6/components/mbedtls
+# Install script for directory: C:/Users/Thom.Dcst/esp4.4/v4.4/esp-idf/components/mbedtls
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,12 +34,12 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump.exe")
+  set(CMAKE_OBJDUMP "C:/Users/Thom.Dcst/.espressif4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/thomas.dacosta/esp4.4/v4.4.6/esp-idf/examples/personal_project/T-H-P_Room_Sensor/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake")
+  include("C:/Users/Thom.Dcst/Documents/21thom03.github/T-H-P_Room_Sensor/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake")
 
 endif()
 
