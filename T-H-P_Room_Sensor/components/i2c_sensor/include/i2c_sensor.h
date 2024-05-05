@@ -21,11 +21,11 @@
 #define PRESS_XLSB_REG          0xF9        // only 4 bits (7,6,5,4)
 #define PRESS_LSB_REG           0xF8
 #define PRESS_MSB_REG           0xF7
-#define CONFIG_REGISTER         0xF5        // t_sb (7,6,5) - filter (4,3,2) - spi3w_en (0)
+#define CONFIG_REGISTER         0xF5        // t_sb (7,6,5) - filter (4,3,2) - spi3w_en (0)     //spi3w_en = SPI 3 wires activate => "0" for disable
 #define CTRL_MEAS               0xF4        // osrs_t (7,6,5) - osrs_p (4,3,2) - mode (1,0)
 #define STATUS                  0xF3        // measuring (3) - im_update (0)
 #define CTRL_HUM                0xF2        // osrs_h (3,2,1,0)
-#define CALIB_26_41             0xE1
+#define CALIB_26_41             0xE1        // 2 bits of data
 #define RESET                   0xE0
 #define CHIP_ID                 0xD0        //READ ONLY
 #define CALIB_00_25             0x88           
@@ -43,19 +43,12 @@
  * Structure et Enumeration
 **********************************/
 
-typedef struct
-{
-        i2c_port_t port;
-        i2c_config_t config;
-        uint8_t slave_addr;
-} i2c_sensor_t;
-
 typedef enum
 {
     NORMAL_CONFIG   =   0x03,
     FORCED_CONFIG   =   0x01,
     SLEEP_CONFIG    =   0x00
-} BME280_config_t;
+} BME280_mode_t;
 
 typedef enum
 {
@@ -86,7 +79,24 @@ typedef enum
     t_sb_1000       =   0x05,
     t_sb_10         =   0x06,
     t_sb_20         =   0x07
-} standby_time_t;
+} BME280_standby_time_t;
+
+typedef struct
+{
+        i2c_port_t port;
+        i2c_config_t config;
+        uint8_t slave_addr;
+} i2c_sensor_t;
+
+typedef struct
+{
+    BME280_mode_t mode;
+    BME280_standby_time_t t_sb;
+    BME280_filter_t filter;
+    BME280_oversampling_t osrs_T,
+                          osrs_P,
+                          osrs_H;         
+} BME280_config_t;
 
 /**********************************
  * I2C functions
@@ -120,12 +130,13 @@ esp_err_t i2c_read_bytes(i2c_sensor_t sensor, uint8_t data_register, uint8_t *da
  * @param write_register    [Register number to write]
  * @param data              [data write on I2C bus]
  * @param data_len          [data lenght write on the bus]
- * @param timeout           [timeout maximum of the bus]
  */
 esp_err_t i2c_write_bytes(i2c_sensor_t sensor, uint8_t write_register, uint8_t *data, size_t data_len);
 
 /**
- * @brief Configure the sensor status between Sleep, Forced and Normal
+ * @brief Configure all the sensor function and requirements to work
+ * @param sensor            [I2C bus configuration]
+ * @param config            [Sensor config with : mode, standby_time, filter, osrs_T, osrs_P, osrs_H]
 */
 esp_err_t i2c_BME280_config(i2c_sensor_t sensor, BME280_config_t config);
 

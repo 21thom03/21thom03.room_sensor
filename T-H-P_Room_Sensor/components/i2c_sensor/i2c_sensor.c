@@ -9,12 +9,24 @@ static const char *TAG = "I2C";
 
 void i2c_begin(i2c_sensor_t sensor)
 {
+    esp_err_t err;
+
+    err = i2c_param_config(sensor.port, &sensor.config);
+    err = i2c_driver_install(sensor.port, sensor.config.mode, 0, 0, 0);
+    if (!err)
+        ESP_LOGI(TAG, "[port : %X] Configuration OK\n", sensor.port);
+    else
+        ESP_LOGE(TAG, "[port : %X] Configuration failed, ERROR : %d\n Error messge : %s", sensor.port, err ,esp_err_to_name(err));
 }
 
 /*---------------------------------------------------------------------------------------------------*/
 
 void i2c_disconnected(i2c_sensor_t sensor)
 {
+    esp_err_t err = i2c_driver_delete(sensor.port);
+    printf("\n\n");
+    if(err == ESP_OK) ESP_LOGI(TAG, "[port : %X] End of communication", sensor.port);
+    else ESP_LOGW(TAG, "[port : %X] End of communication failed. Message : %s", sensor.port, esp_err_to_name(err));
 }
 
 /******************************
@@ -25,9 +37,10 @@ esp_err_t i2c_read_bytes(i2c_sensor_t sensor, uint8_t data_register, uint8_t *da
 {
     i2c_cmd_handle_t cmd = i2c_cmd_link_create();
     i2c_master_start(cmd);
+    i2c_master_write_byte(cmd, ((sensor.slave_addr << 1) | I2C_MASTER_WRITE), ACK);
+    i2c_master_write_byte(cmd, (data_register), ACK);
+    i2c_master_start(cmd);
     i2c_master_write_byte(cmd, ((sensor.slave_addr << 1) | I2C_MASTER_READ), ACK);
-    if (data_register != 0)
-        i2c_master_write_byte(cmd, (data_register), ACK);
     i2c_master_read(cmd, &data[0], data_len - 1, ACK);
     i2c_master_read(cmd, &data[data_len - 1], 1, NACK);
     i2c_master_stop(cmd);
@@ -55,12 +68,11 @@ esp_err_t i2c_write_bytes(i2c_sensor_t sensor, uint8_t write_register, uint8_t *
     i2c_cmd_handle_t cmd = i2c_cmd_link_create();
     i2c_master_start(cmd);
     i2c_master_write_byte(cmd, ((sensor.slave_addr << 1) | I2C_MASTER_WRITE), ACK);
-    for(uint8_t rgt_nbr = 0; rgt_nbr < write_register || write_register == 0; rgt_nbr++)
+    for (uint8_t reg_nbr = 0; reg_nbr <= write_register && write_register != 0; reg_nbr++)
     {
-        i2c_master_write_byte(cmd, write_register, ACK);
-        i2c_master_write(cmd, data, data_len, ACK);
+        i2c_master_write_byte(cmd, (write_register + reg_nbr), ACK);
+        i2c_master_write_byte(cmd, data[reg_nbr], ACK);
     }
-
     i2c_master_stop(cmd);
     esp_err_t ret = i2c_master_cmd_begin(sensor.port, cmd, pdMS_TO_TICKS(TIMEOUT));
     i2c_cmd_link_delete(cmd);
@@ -71,9 +83,24 @@ esp_err_t i2c_write_bytes(i2c_sensor_t sensor, uint8_t write_register, uint8_t *
     }
     else
     {
-        ESP_LOGE(TAG, "[port : %X, slave : 0x%X] Writing failed, error %d", sensor.port, sensor.slave_addr, ret);
-        ESP_LOGE(TAG, "Message : %s", esp_err_to_name(ret));
+        ESP_LOGE(TAG, "[port : %X, slave : 0x%X] Writing failed, error : %d, message : %s", sensor.port, sensor.slave_addr, ret, esp_err_to_name(ret));
     }
+    return ret;
+}
+
+/******************************
+ * Sensor functions
+ ******************************/
+
+esp_err_t i2c_BME280_config(i2c_sensor_t sensor, BME280_config_t config)
+{
+    uint8_t config_data      = config.t_sb << 2;
+    uint8_t ctrl_meas_data   = 0x00;
+    uint8_t ctrl_hum_data    = 0x00;
+
+    config_data |= config.filter << 2;
+    
+    esp_err_t ret = ESP_OK;
     return ret;
 }
 
