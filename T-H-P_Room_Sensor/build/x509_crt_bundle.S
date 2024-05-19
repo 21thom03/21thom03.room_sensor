@@ -1,4 +1,4 @@
-/* * Data converted from C:/Users/thomas.dacosta/Documents/21thom03.github/T-H-P_Room_Sensor/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from C:/Users/Thom.Dcst/Documents/21thom03.github/T-H-P_Room_Sensor/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

@@ -4,6 +4,6 @@
 
 method=source_dir
 command=
-source_dir=C:/esp4.4/frameworks/esp-idf-v4.4.6/components/bootloader/subproject
+source_dir=C:/Users/Thom.Dcst/esp4.4/v4.4/esp-idf/components/bootloader/subproject
 work_dir=
 
