@@ -345,7 +345,7 @@ BME280_err_e BME280_Read_T_P_H_values(i2c_sensor_t sensor, int32_t *Raw_values)
 
     if(ret != ESP_OK)
     {
-        ESP_LOGE(TAG, "Sensor measuring values failed, Error message : %s", espr_err_to_name(ret));
+        ESP_LOGE(TAG, "Sensor measuring values failed, Error message : %s", esp_err_to_name(ret));
         Raw_values[0] = -1;
         Raw_values[1] = -1;
         Raw_values[2] = -1;
