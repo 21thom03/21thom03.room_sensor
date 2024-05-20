@@ -13,7 +13,7 @@ void i2c_begin(i2c_sensor_t sensor)
 
     err = i2c_param_config(sensor.port, &sensor.i2c_config);
     err = i2c_driver_install(sensor.port, sensor.i2c_config.mode, 0, 0, 0);
-    if (!err)
+    if (err == ESP_OK)
     {
         ESP_LOGW(TAG, "/-------Configuration finished---------/");
         ESP_LOGW(TAG, "I2C port : %d\r", sensor.port);
@@ -61,7 +61,7 @@ esp_err_t i2c_read_bits(i2c_sensor_t sensor, uint8_t data_register, uint8_t *dat
     }
     else
     {
-        ESP_LOGE(TAG, "[port : %X, slave: 0x%X] Failed to read %d bytes, error : %d\n", sensor.port, sensor.slave_addr, data_len, ret);
+        ESP_LOGE(TAG, "[port : %X, slave: 0x%X] Failed to read %d bytes, error : %d", sensor.port, sensor.slave_addr, data_len, ret);
         ESP_LOGE(TAG, "Error : %d Message: %s\n", ret, esp_err_to_name(ret));
     }
     return ret;
@@ -75,7 +75,7 @@ esp_err_t i2c_read_bit(i2c_sensor_t sensor, uint8_t read_register, uint8_t *data
     i2c_master_write_byte(cmd, read_register, ACK);
     i2c_master_start(cmd);
     i2c_master_write_byte(cmd, ((sensor.slave_addr << 1) | I2C_MASTER_READ), ACK);
-    i2c_master_read_byte(cmd, data, NACK);
+    i2c_master_read_byte(cmd, data, ACK);
     i2c_master_stop(cmd);
     esp_err_t ret = i2c_master_cmd_begin(sensor.port, cmd, pdMS_TO_TICKS(TIMEOUT));
     i2c_cmd_link_delete(cmd);
@@ -86,7 +86,7 @@ esp_err_t i2c_read_bit(i2c_sensor_t sensor, uint8_t read_register, uint8_t *data
     }
     else
     {
-        ESP_LOGE(TAG, "[port : %X, slave: 0x%X] Failed to read %X register, error : %d\n", sensor.port, sensor.slave_addr, read_register, ret);
+        ESP_LOGE(TAG, "[port : %X, slave: 0x%X] Failed to read %X register, error : %d", sensor.port, sensor.slave_addr, read_register, ret);
         ESP_LOGE(TAG, "Error : %d Message: %s\n", ret, esp_err_to_name(ret));
     }
     return ret;

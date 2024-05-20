@@ -7,7 +7,7 @@
 
 i2c_sensor_t BME280_sensor = {
     .port = I2C_PORT,
-    .slave_addr = 0x00,
+    .slave_addr = 0x76,
     .i2c_config = {
             .mode = I2C_MODE_MASTER,
             .sda_io_num = I2C_MASTER_SDA_IO, // select GPIO specific to your project
@@ -18,18 +18,23 @@ i2c_sensor_t BME280_sensor = {
     },
 };
 
-BME280_config_t BME280_configuration = {
-    .mode = NORMAL_CONFIG,
+BME280_config_t BME280_sensor_conf = {
+    .mode = SLEEP_CONFIG,
     .t_sb = t_sb_10,
-    .filter = no_filter,
+    .filter = filter_2,
     .osrs_T = Over_1,
-    .osrs_P = Over_0,
-    .osrs_H = Over_16,
+    .osrs_P = Over_2,
+    .osrs_H = Over_4,
     .spi3w = 0,
 };
 
 void app_main(void)
 {
+    uint8_t value_reg;
+    uint8_t reset = 0xB6;
     i2c_begin(BME280_sensor);
-    BME280_config(BME280_sensor, BME280_configuration);
+
+    BME280_config(BME280_sensor, BME280_sensor_conf);
+
+    i2c_disconnected(BME280_sensor);
 }

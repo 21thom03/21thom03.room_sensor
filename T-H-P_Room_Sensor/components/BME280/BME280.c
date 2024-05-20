@@ -19,10 +19,10 @@ double t_fine;
 
 BME280_err_e BME280_write_mode(i2c_sensor_t sensor, BME280_mode_e mode)
 {
-    int8_t mode_config = -1;
-    esp_err_t ret = i2c_read_bit(sensor, CTRL_MEAS_REG,(uint8_t)mode_config);
+    uint8_t mode_config = 0;
+    esp_err_t ret = i2c_read_bit(sensor, CTRL_MEAS_REG,&mode_config);
 
-    if((mode_config == -1) || (ret != ESP_OK))
+    if(ret != ESP_OK)
     {
         ESP_LOGW(TAG, "Mode number: %d, Status: %s\r", mode, BME280_err_to_name(READING_FAIL));
         return READING_FAIL;
@@ -31,7 +31,7 @@ BME280_err_e BME280_write_mode(i2c_sensor_t sensor, BME280_mode_e mode)
     mode_config &= 0b11111100;
     mode_config |= mode;
 
-    ret = i2c_write_bit(sensor, CTRL_MEAS_REG, mode_config);
+    ret = i2c_write_bit(sensor, CTRL_MEAS_REG, &mode_config);
 
     if( ret != ESP_OK)
     {
@@ -48,10 +48,10 @@ BME280_err_e BME280_write_mode(i2c_sensor_t sensor, BME280_mode_e mode)
 
 BME280_err_e BME280_write_TimeStandby(i2c_sensor_t sensor, BME280_standby_time_e time)
 {
-    int8_t time_config = -1;
-    esp_err_t ret = i2c_read_bit(sensor,CONFIG_REGISTER , (uint8_t)time_config);
+    uint8_t time_config = 0;
+    esp_err_t ret = i2c_read_bit(sensor,CONFIG_REGISTER , &time_config);
 
-    if((time_config == -1) || (ret != ESP_OK))
+    if(ret != ESP_OK)
     {
         ESP_LOGW(TAG, "Standby time mode: %d, Status: %s\r", time, BME280_err_to_name(READING_FAIL));
         return READING_FAIL;
@@ -60,7 +60,7 @@ BME280_err_e BME280_write_TimeStandby(i2c_sensor_t sensor, BME280_standby_time_e
     time_config &= 0b00011111;
     time_config |= time << 5;
 
-    ret = i2c_write_bit(sensor, CONFIG_REGISTER, time_config);
+    ret = i2c_write_bit(sensor, CONFIG_REGISTER, &time_config);
 
     if( ret != ESP_OK)
     {
@@ -76,10 +76,10 @@ BME280_err_e BME280_write_TimeStandby(i2c_sensor_t sensor, BME280_standby_time_e
 
 BME280_err_e BME280_write_filtercoef(i2c_sensor_t sensor, BME280_filter_e filter_coef)
 {
-    int8_t filter_config = -1;
-    esp_err_t ret = i2c_read_bit(sensor,CONFIG_REGISTER , (uint8_t)filter_config);
+    uint8_t filter_config = 0;
+    esp_err_t ret = i2c_read_bit(sensor,CONFIG_REGISTER , &filter_config);
 
-    if((filter_config == -1) || (ret != ESP_OK))
+    if(ret != ESP_OK)
     {
         ESP_LOGW(TAG, "Filter mode: x%f, Status: %s\r", pow(filter_coef,2), BME280_err_to_name(READING_FAIL));
         return READING_FAIL;
@@ -88,7 +88,7 @@ BME280_err_e BME280_write_filtercoef(i2c_sensor_t sensor, BME280_filter_e filter
     filter_config &= 0b11100011;
     filter_config |= filter_coef << 2;
 
-    ret = i2c_write_bit(sensor, CONFIG_REGISTER, filter_config);
+    ret = i2c_write_bit(sensor, CONFIG_REGISTER, &filter_config);
 
     if( ret != ESP_OK)
     {
@@ -104,10 +104,10 @@ BME280_err_e BME280_write_filtercoef(i2c_sensor_t sensor, BME280_filter_e filter
 
 BME280_err_e BME280_write_oversamp_Temp(i2c_sensor_t sensor, BME280_oversampling_e osrs_T)
 {
-    int8_t os_Temp_config = -1;
-    esp_err_t ret = i2c_read_bit(sensor,CTRL_MEAS_REG , (uint8_t)os_Temp_config);
+    uint8_t os_Temp_config = 0;
+    esp_err_t ret = i2c_read_bit(sensor,CTRL_MEAS_REG , &os_Temp_config);
 
-    if((os_Temp_config == -1) || (ret != ESP_OK))
+    if(ret != ESP_OK)
     {
         ESP_LOGW(TAG, "Temperature OverSampling mode: x%f, Status: %s\r", pow(osrs_T,2), BME280_err_to_name(READING_FAIL));
         return READING_FAIL;
@@ -116,7 +116,7 @@ BME280_err_e BME280_write_oversamp_Temp(i2c_sensor_t sensor, BME280_oversampling
     os_Temp_config &= 0b00011111;
     os_Temp_config |= osrs_T << 5;
 
-    ret = i2c_write_bit(sensor, CTRL_MEAS_REG, os_Temp_config);
+    ret = i2c_write_bit(sensor, CTRL_MEAS_REG, &os_Temp_config);
 
     if( ret != ESP_OK)
     {
@@ -132,10 +132,10 @@ BME280_err_e BME280_write_oversamp_Temp(i2c_sensor_t sensor, BME280_oversampling
 
 BME280_err_e BME280_write_oversamp_Press(i2c_sensor_t sensor, BME280_oversampling_e osrs_P)
 {
-    int8_t os_Press_config = -1;
-    esp_err_t ret = i2c_read_bit(sensor,CTRL_MEAS_REG , (uint8_t)os_Press_config);
+    uint8_t os_Press_config = 0;
+    esp_err_t ret = i2c_read_bit(sensor,CTRL_MEAS_REG , &os_Press_config);
 
-    if((os_Press_config == -1) || (ret != ESP_OK))
+    if(ret != ESP_OK)
     {
         ESP_LOGW(TAG, "Temperature OverSampling mode: x%f, Status: %s\r", pow(osrs_P,2), BME280_err_to_name(READING_FAIL));
         return READING_FAIL;
@@ -144,7 +144,7 @@ BME280_err_e BME280_write_oversamp_Press(i2c_sensor_t sensor, BME280_oversamplin
     os_Press_config &= 0b11100011;
     os_Press_config |= osrs_P << 2;
 
-    ret = i2c_write_bit(sensor, CTRL_MEAS_REG, os_Press_config);
+    ret = i2c_write_bit(sensor, CTRL_MEAS_REG, &os_Press_config);
 
     if( ret != ESP_OK)
     {
@@ -160,10 +160,10 @@ BME280_err_e BME280_write_oversamp_Press(i2c_sensor_t sensor, BME280_oversamplin
 
 BME280_err_e BME280_write_oversamp_Hum(i2c_sensor_t sensor, BME280_oversampling_e osrs_H)
 {
-    int8_t os_Hum_config = -1;
-    esp_err_t ret = i2c_read_bit(sensor,CTRL_HUM_REG , (uint8_t)os_Hum_config);
+    uint8_t os_Hum_config = 0;
+    esp_err_t ret = i2c_read_bit(sensor,CTRL_HUM_REG , &os_Hum_config);
 
-    if((os_Hum_config == -1) || (ret != ESP_OK))
+    if(ret != ESP_OK)
     {
 
         ESP_LOGW(TAG, "Temperature OverSampling mode: x%f, Status: %s\r", pow(osrs_H,2), BME280_err_to_name(READING_FAIL));
@@ -173,7 +173,7 @@ BME280_err_e BME280_write_oversamp_Hum(i2c_sensor_t sensor, BME280_oversampling_
     os_Hum_config &= 0b11111100;
     os_Hum_config |= osrs_H;
 
-    ret = i2c_write_bit(sensor, CTRL_HUM_REG, os_Hum_config);
+    ret = i2c_write_bit(sensor, CTRL_HUM_REG, &os_Hum_config);
 
     if( ret != ESP_OK)
     {
@@ -190,7 +190,7 @@ BME280_err_e BME280_write_oversamp_Hum(i2c_sensor_t sensor, BME280_oversampling_
 BME280_err_e BME280_Reset_sensor(i2c_sensor_t sensor)
 {
     uint8_t reset = RESET_SENSOR;
-    esp_err_t ret = i2c_write_bit(sensor,RESET_REG, reset);
+    esp_err_t ret = i2c_write_bit(sensor,RESET_REG, &reset);
 
     if(ret != ESP_OK)
     {
@@ -210,23 +210,21 @@ esp_err_t BME280_config(i2c_sensor_t sensor, BME280_config_t config)
     // uint8_t config_data = config.t_sb << 5 | config.filter << 2 | config.spi3w;
     // uint8_t ctrl_meas_data = config.osrs_T << 5 | config.osrs_P << 2 | config.mode;
     // uint8_t ctrl_hum_data = config.osrs_H;
-    while(ret != READING_FAIL || ret != WRITING_FAIL)
-    {
-        ret = BME280_write_mode(sensor, config.mode);
-        ret = BME280_write_filtercoef(sensor, config.filter);
-        ret = BME280_write_TimeStandby(sensor, config.t_sb);
-        ret = BME280_write_oversamp_Temp(sensor, config.osrs_T);
-        ret = BME280_write_oversamp_Press(sensor, config.osrs_P);
-        ret = BME280_write_oversamp_Hum(sensor, config.osrs_H);
-    }
+
+    ret = BME280_write_mode(sensor, config.mode);
+    ret = BME280_write_filtercoef(sensor, config.filter);
+    ret = BME280_write_TimeStandby(sensor, config.t_sb);
+    ret = BME280_write_oversamp_Temp(sensor, config.osrs_T);
+    ret = BME280_write_oversamp_Press(sensor, config.osrs_P);
+    ret = BME280_write_oversamp_Hum(sensor, config.osrs_H);
 
     if(ret != READING_FAIL || ret != WRITING_FAIL)
     {
-        ESP_LOGW(TAG, "\n/-------Sensor configuration finished---------/");
+        ESP_LOGW(TAG, "/-------Sensor configuration finished---------/");
         ESP_LOGW(TAG, "Mode : %d\r", config.mode);
-        ESP_LOGW(TAG, "Filter coefficient : %f, Standby time : %d\r", pow(config.filter,2), config.t_sb);
-        ESP_LOGW(TAG, "Over Sampling Temp : %f, Over Sampling Press : %f\r", pow(config.osrs_T,2), pow(config.osrs_P,2));
-        ESP_LOGW(TAG, "Over Sampling Hum : %f\r", pow(config.osrs_H,2));
+        ESP_LOGW(TAG, "Filter coefficient : %d, Standby time : %d\r", config.filter, config.t_sb);
+        ESP_LOGW(TAG, "Over Sampling Temp : %d, Over Sampling Press : %d\r", config.osrs_T, config.osrs_P);
+        ESP_LOGW(TAG, "Over Sampling Hum : %d\r", config.osrs_H);
         ESP_LOGW(TAG, "/---------------------------------------------/");
         return WRITING_OK;
     }
@@ -241,7 +239,7 @@ int8_t BME280_Measuring(i2c_sensor_t sensor)
 {
     uint8_t Meas_value = 255;
 
-    esp_err_t ret = i2c_read_bit(sensor, STATUS_REG, Meas_value);
+    esp_err_t ret = i2c_read_bit(sensor, STATUS_REG, &Meas_value);
 
     Meas_value &= 0b00001000;
     Meas_value = Meas_value >> 3;
@@ -261,7 +259,7 @@ int8_t BME280_Im_Update(i2c_sensor_t sensor)
 {
     uint8_t Update_value = 255;
 
-    esp_err_t ret = i2c_read_bit(sensor, STATUS_REG, Update_value);
+    esp_err_t ret = i2c_read_bit(sensor, STATUS_REG, &Update_value);
 
     Update_value &= 0b0000001;
 
@@ -280,7 +278,7 @@ int8_t BME280_Read_Chip_ID(i2c_sensor_t sensor)
 {
     uint8_t ChipID = 255;
 
-    esp_err_t ret = i2c_read_bit(sensor, STATUS_REG, ChipID);
+    esp_err_t ret = i2c_read_bit(sensor, STATUS_REG, &ChipID);
 
     if(ret != ESP_OK)
     {
@@ -341,7 +339,7 @@ BME280_err_e BME280_Read_T_P_H_values(i2c_sensor_t sensor, int32_t *Raw_values)
 {
     uint8_t i2c_values[8] = {0};
 
-    esp_err_t ret = i2c_read_bits(sensor, PRESS_MSB_REG, i2c_values, 8);
+    esp_err_t ret = i2c_read_bits(sensor, PRESS_MSB_REG, &i2c_values, 8);
 
     if(ret != ESP_OK)
     {
