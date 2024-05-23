@@ -49,8 +49,8 @@ esp_err_t i2c_read_bits(i2c_sensor_t sensor, uint8_t data_register, uint8_t *dat
     i2c_master_write_byte(cmd, (data_register), ACK);
     i2c_master_start(cmd);
     i2c_master_write_byte(cmd, ((sensor.slave_addr << 1) | I2C_MASTER_READ), ACK);
-    i2c_master_read(cmd, &data[0], data_len - 1, ACK);
-    i2c_master_read(cmd, &data[data_len - 1], 1, NACK);
+    i2c_master_read(cmd, data, data_len-1, ACK);
+    i2c_master_read(cmd, &data[data_len-1], 1,NACK);
     i2c_master_stop(cmd);
     esp_err_t ret = i2c_master_cmd_begin(sensor.port, cmd, pdMS_TO_TICKS(TIMEOUT));
     i2c_cmd_link_delete(cmd);
@@ -75,7 +75,7 @@ esp_err_t i2c_read_bit(i2c_sensor_t sensor, uint8_t read_register, uint8_t *data
     i2c_master_write_byte(cmd, read_register, ACK);
     i2c_master_start(cmd);
     i2c_master_write_byte(cmd, ((sensor.slave_addr << 1) | I2C_MASTER_READ), ACK);
-    i2c_master_read_byte(cmd, data, ACK);
+    i2c_master_read_byte(cmd, data, NACK);
     i2c_master_stop(cmd);
     esp_err_t ret = i2c_master_cmd_begin(sensor.port, cmd, pdMS_TO_TICKS(TIMEOUT));
     i2c_cmd_link_delete(cmd);

@@ -339,7 +339,7 @@ BME280_err_e BME280_Read_T_P_H_values(i2c_sensor_t sensor, int32_t *Raw_values)
 {
     uint8_t i2c_values[8] = {0};
 
-    esp_err_t ret = i2c_read_bits(sensor, PRESS_MSB_REG, &i2c_values, 8);
+    esp_err_t ret = i2c_read_bits(sensor, PRESS_MSB_REG, i2c_values, 8);
 
     if(ret != ESP_OK)
     {

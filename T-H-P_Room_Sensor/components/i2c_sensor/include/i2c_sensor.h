@@ -13,8 +13,8 @@
 /**********************************
  * Functions utilities
 **********************************/
-#define ACK                     0x01
-#define NACK                    0x00
+#define ACK                     0x00
+#define NACK                    0x01
 #define I2C_MASTER_READ         0x01
 #define I2C_MASTER_WRITE        0x00
 #define TIMEOUT                 pdMS_TO_TICKS(40) 
