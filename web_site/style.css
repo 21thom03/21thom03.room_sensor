@@ -1,0 +1,29 @@
+* {
+    font-family: Helvetica;
+}
+
+
+body{
+    background-color:cornflowerblue;
+}
+
+h1{
+    font-size: 2.3em;
+    text-align: center;
+    color: white;
+    background-color: blue;
+    border-radius: 20px;
+    padding: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+}
+
+.selection:hover{
+    background-color: gray;
+}
+
+footer{
+    background-color: aqua;
+    color: white;
+}
