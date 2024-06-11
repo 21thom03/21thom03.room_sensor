@@ -9,6 +9,8 @@
 #include <stdlib.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include "freertos/event_groups.h"
+#include "esp_event.h"
 #include "esp_err.h"
 #include "esp_log.h"
 #include "driver/i2c.h"
@@ -21,8 +23,8 @@
 /**********************************
  * Wi-Fi configuration
 ***********************************/
-#define WIFI_SSID               ""
-#define WIFI_PASSWORD           ""
+#define WIFI_SSID               "Livebox-FA70"
+#define WIFI_PASSWORD           "C1409D1206M1408T2103N2702"
 
 /**********************************
  * Constante definition

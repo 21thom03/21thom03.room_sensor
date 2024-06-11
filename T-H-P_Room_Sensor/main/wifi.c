@@ -1,24 +1,30 @@
 #include "main_config.h"
 
-/**********************************
- * Functions declarations
-**********************************/
 const char *TAG = "Wi-Fi";
 
-esp_err_t Wifi_connection(void);
-esp_err_t Wifi_disconnection(void);
+typedef struct {
+    char ssid[32];
+    char pass[64];
+} wifi_id_t;
 
 /**********************************
  * Functions code
 **********************************/
-esp_err_t Wifi_connection(void)
+esp_err_t esp_Wifi_connection(void)
 {
-    wifi_init_config_t wifi_config;
 
-    // wifi_config = WIFI_INIT_CONFIG_DEFAULT;
+    wifi_init_config_t wifi_init_config = WIFI_INIT_CONFIG_DEFAULT();
+    wifi_config_t wifi_config;
+    memset(&wifi_config, 0, sizeof(wifi_config));
 
-    esp_err_t ret = esp_wifi_init(&wifi_config);
-    ret = esp_wifi_set_mode(WIFI_MODE_STA);
+    strncpy((char*)wifi_config.sta.ssid, WIFI_SSID, 32);
+    strncpy((char*)wifi_config.sta.password, WIFI_PASSWORD, 64);
+
+    esp_err_t ret = esp_netif_init();
+    ret = esp_event_loop_create_default();
+    esp_netif_create_default_wifi_sta();
+    ret = esp_wifi_init(&wifi_init_config);
+    ret = esp_wifi_set_config(WIFI_MODE_STA, &wifi_config);
     if(!ret)
     {
         ESP_LOGE(TAG, "Error : %d, error message : %s", ret, esp_err_to_name(ret));
@@ -37,14 +43,15 @@ esp_err_t Wifi_connection(void)
         return ESP_OK;
 }
 
-esp_err_t Wifi_disconnection(void)
+esp_err_t esp_Wifi_disconnection(void)
 {
-    esp_err_t ret = esp_wifi_stop();
-    ret = esp_wifi_restore();
-    ret = esp_wifi_disconnect();
+    esp_err_t ret =  esp_wifi_disconnect();
     if(!ret)
     ESP_LOGE(TAG, "Wi-Fi disconnection failed");
     else
     ESP_LOGI(TAG, "Wi-Fi disconnect with success");
+
+    esp_wifi_stop();
+    esp_wifi_deinit();
     return ret;
 }

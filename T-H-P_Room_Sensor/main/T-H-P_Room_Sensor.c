@@ -28,6 +28,13 @@ BME280_config_t BME280_sensor_conf = {
     .spi3w = 0,
 };
 
+/**********************************
+ * Functions declarations
+**********************************/
+esp_err_t esp_Wifi_connection(void);
+esp_err_t esp_Wifi_disconnection(void);
+
+
 void app_main(void)
 {
     // int32_t raw_values[4] = {0};
@@ -54,4 +61,7 @@ void app_main(void)
     //     }
     // }
     // i2c_disconnected(BME280_sensor);
+    esp_Wifi_connection();
+    vTaskDelay(50000);
+    esp_Wifi_disconnection();
 }
