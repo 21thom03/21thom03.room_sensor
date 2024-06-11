@@ -4,13 +4,25 @@
 /**********************************
  * Project include
 ***********************************/
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include "esp_err.h"
+#include "esp_log.h"
 #include "driver/i2c.h"
 #include "driver/gpio.h"
+#include "esp_wifi.h"
 
 #include "i2c_sensor.h"
 #include "BME280.h"
+
+/**********************************
+ * Wi-Fi configuration
+***********************************/
+#define WIFI_SSID               ""
+#define WIFI_PASSWORD           ""
 
 /**********************************
  * Constante definition

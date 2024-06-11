@@ -246,16 +246,12 @@ BME280_err_e BME280_Reset_sensor(i2c_sensor_t sensor);
 /**********************************
  * BME280 return functions
 **********************************/
-<<<<<<< HEAD
-
-=======
 /***
  * @brief 
  * @return -1 error, 
  * @return 0 Measure finished, 
  * @return 1 Measure at the moment
 */
->>>>>>> 135206d7af9dac5c81ec9cd01b0c36b55bf5e028
 int8_t BME280_Measuring(i2c_sensor_t sensor);
 
 /*---------------------------------------------------------------------------------------------------*/
