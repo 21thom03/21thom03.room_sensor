@@ -24,8 +24,13 @@
 #define I2C_MASTER_WRITE        0x00
 #define I2C_MASTER_READ         0x01
 
+<<<<<<< HEAD
 #define ACK                     true
 #define NACK                    false
+=======
+#define ACK                     FALSE
+#define NACK                    TRUE
+>>>>>>> 135206d7af9dac5c81ec9cd01b0c36b55bf5e028
 
 /******************************
  * Structure

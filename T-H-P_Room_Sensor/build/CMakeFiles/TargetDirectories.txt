@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+C:/Users/Thom.Dcst/Documents/21thom03.github/T-H-P_Room_Sensor/build/CMakeFiles/mconf-idf.dir
+>>>>>>> 135206d7af9dac5c81ec9cd01b0c36b55bf5e028
 C:/Users/Thom.Dcst/Documents/21thom03.github/T-H-P_Room_Sensor/build/CMakeFiles/menuconfig.dir
 C:/Users/Thom.Dcst/Documents/21thom03.github/T-H-P_Room_Sensor/build/CMakeFiles/confserver.dir
 C:/Users/Thom.Dcst/Documents/21thom03.github/T-H-P_Room_Sensor/build/CMakeFiles/bootloader.dir
