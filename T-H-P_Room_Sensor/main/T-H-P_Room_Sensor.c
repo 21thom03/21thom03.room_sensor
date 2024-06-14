@@ -31,12 +31,13 @@ BME280_config_t BME280_sensor_conf = {
 /**********************************
  * Functions declarations
 **********************************/
-esp_err_t esp_Wifi_connection(void);
-esp_err_t esp_Wifi_disconnection(void);
+esp_err_t wifi_init_sta(void);
+esp_err_t wifi_disconnect(void);
 
 
 void app_main(void)
 {
+    nvs_flash_init();
     // int32_t raw_values[4] = {0};
     // int32_t press, temp, hum;
     // i2c_begin(BME280_sensor);
@@ -61,7 +62,8 @@ void app_main(void)
     //     }
     // }
     // i2c_disconnected(BME280_sensor);
-    esp_Wifi_connection();
-    vTaskDelay(50000);
-    esp_Wifi_disconnection();
+    wifi_init_sta();
+    vTaskDelay(5000);
+    wifi_disconnect();
+    nvs_flash_erase();
 }

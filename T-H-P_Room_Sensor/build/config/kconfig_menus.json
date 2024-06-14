@@ -3156,7 +3156,7 @@
                                             }
                                         ],
                                         "depends_on": "BT_ENABLED",
-                                        "help": "Speicify HCI mode as VHCI or UART(H4)",
+                                        "help": "Specify HCI mode as VHCI or UART(H4)",
                                         "id": "component-config-bluetooth-bluetooth-bluetooth-controller-hci-mode",
                                         "name": "BTDM_CTRL_HCI_MODE_CHOICE",
                                         "title": "HCI mode",
@@ -3429,6 +3429,16 @@
                                         "name": "BTDM_CTRL_FULL_SCAN_SUPPORTED",
                                         "range": null,
                                         "title": "BLE full scan feature supported",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "BT_ENABLED",
+                                        "help": "Disable active scan backoff. The bluetooth spec requires that scanners should run a backoff procedure to\nminimize collision of scan request PDUs from nultiple scanners. If scan backoff is disabled, in active\nscanning, scan request PDU will be sent every time when HW receives scannable ADV PDU.",
+                                        "id": "BTDM_CTRL_SCAN_BACKOFF_UPPERLIMITMAX",
+                                        "name": "BTDM_CTRL_SCAN_BACKOFF_UPPERLIMITMAX",
+                                        "range": null,
+                                        "title": "Disable active scan backoff",
                                         "type": "bool"
                                     },
                                     {
@@ -6755,17 +6765,76 @@
                             {
                                 "children": [],
                                 "depends_on": "BT_NIMBLE_ENABLED && BT_NIMBLE_ENABLED",
-                                "help": "This enable BLE high duty advertising interval feature",
+                                "help": "This enables BLE high duty advertising interval feature",
                                 "id": "BT_NIMBLE_HIGH_DUTY_ADV_ITVL",
                                 "name": "BT_NIMBLE_HIGH_DUTY_ADV_ITVL",
                                 "range": null,
                                 "title": "Enable BLE high duty advertising interval feature",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "BT_NIMBLE_ENABLED",
+                                "help": "This option is used to enable support for sending Vendor Specific HCI commands and handling\nVendor Specific HCI Events.",
+                                "id": "BT_NIMBLE_VS_SUPPORT",
+                                "name": "BT_NIMBLE_VS_SUPPORT",
+                                "range": null,
+                                "title": "Enable support for VSC and VSE",
                                 "type": "bool"
                             }
                         ],
                         "depends_on": "BT_NIMBLE_ENABLED",
                         "id": "component-config-bluetooth-nimble-options",
                         "title": "NimBLE Options",
+                        "type": "menu"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": "BT_HCI_LOG_DEBUG_EN",
+                                "help": "This option is to configure the buffer size of the hci data steam cache in hci debug mode.\nThis is a ring buffer, the new data will overwrite the oldest data if the buffer is full.",
+                                "id": "BT_HCI_LOG_DATA_BUFFER_SIZE",
+                                "name": "BT_HCI_LOG_DATA_BUFFER_SIZE",
+                                "range": null,
+                                "title": "Size of the cache used for HCI data in Bluetooth HCI debug mode (N*1024 bytes)",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "BT_HCI_LOG_DEBUG_EN",
+                                "help": "This option is to configure the buffer size of the hci adv report cache in hci debug mode.\nThis is a ring buffer, the new data will overwrite the oldest data if the buffer is full.",
+                                "id": "BT_HCI_LOG_ADV_BUFFER_SIZE",
+                                "name": "BT_HCI_LOG_ADV_BUFFER_SIZE",
+                                "range": null,
+                                "title": "Size of the cache used for adv report in Bluetooth HCI debug mode (N*1024 bytes)",
+                                "type": "int"
+                            }
+                        ],
+                        "depends_on": "BT_BLUEDROID_ENABLED || BT_NIMBLE_ENABLED",
+                        "help": "This option is used to enable bluetooth debug mode, which saves the hci layer data stream.",
+                        "id": "BT_HCI_LOG_DEBUG_EN",
+                        "name": "BT_HCI_LOG_DEBUG_EN",
+                        "range": null,
+                        "title": "Enable Bluetooth HCI debug mode",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "This option decides the maximum number of alarms which\ncould be used by Bluetooth host.",
+                                "id": "BT_ALARM_MAX_NUM",
+                                "name": "BT_ALARM_MAX_NUM",
+                                "range": null,
+                                "title": "Maximum number of Bluetooth alarms",
+                                "type": "int"
+                            }
+                        ],
+                        "depends_on": null,
+                        "id": "component-config-bluetooth-common-options",
+                        "title": "Common Options",
                         "type": "menu"
                     }
                 ],
@@ -11072,24 +11141,6 @@
                         "depends_on": null,
                         "id": "component-config-hardware-settings-sleep-config",
                         "title": "Sleep Config",
-                        "type": "menu"
-                    },
-                    {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": "IDF_TARGET_ESP32C3",
-                                "help": "Its not able to stall ESP32C3 systimer in sleep.\nTo fix related RTOS TICK issue, select it to disable related systimer during sleep.\nTODO: IDF-7036",
-                                "id": "ESP_SLEEP_SYSTIMER_STALL_WORKAROUND",
-                                "name": "ESP_SLEEP_SYSTIMER_STALL_WORKAROUND",
-                                "range": null,
-                                "title": "ESP32C3 SYSTIMER Stall Issue Workaround",
-                                "type": "bool"
-                            }
-                        ],
-                        "depends_on": null,
-                        "id": "component-config-hardware-settings-esp_sleep_workaround",
-                        "title": "ESP_SLEEP_WORKAROUND",
                         "type": "menu"
                     },
                     {

@@ -10,21 +10,26 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/event_groups.h"
+#include "nvs_flash.h"
+#include "esp_system.h"
 #include "esp_event.h"
 #include "esp_err.h"
 #include "esp_log.h"
+
+#include "lwip/err.h"
+#include "lwip/sys.h"
 #include "driver/i2c.h"
 #include "driver/gpio.h"
 #include "esp_wifi.h"
 
-#include "i2c_sensor.h"
+#include "i2c_sensor.h" 
 #include "BME280.h"
 
 /**********************************
  * Wi-Fi configuration
 ***********************************/
-#define WIFI_SSID               "Livebox-FA70"
-#define WIFI_PASSWORD           "C1409D1206M1408T2103N2702"
+#define WIFI_SSID               "Livebox-FA70"  //"Ouiii"
+#define WIFI_PASSWORD           "C1409D1206M1408T2103N2702" //"Zbeubzbeub2103"      
 
 /**********************************
  * Constante definition
