@@ -38,6 +38,9 @@ esp_err_t wifi_disconnect(void);
 void app_main(void)
 {
     nvs_flash_init();
+    wifi_init_sta();
+    vTaskDelay(100);
+
     // int32_t raw_values[4] = {0};
     // int32_t press, temp, hum;
     // i2c_begin(BME280_sensor);
@@ -57,13 +60,12 @@ void app_main(void)
     //             press = BME280_compensate_P_double(raw_values[1]);
     //             printf("Pressure %d Pascal\n", press);
     //             hum = BME280_compensate_H_double(raw_values[2]);
-    //             printf("Humidity %d %\n", hum);
+    //             printf("Humidity %d \n", hum);
     //             vTaskDelay(500);
     //     }
     // }
     // i2c_disconnected(BME280_sensor);
-    wifi_init_sta();
-    vTaskDelay(5000);
+
     wifi_disconnect();
     nvs_flash_erase();
 }
