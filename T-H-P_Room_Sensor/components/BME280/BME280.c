@@ -25,6 +25,7 @@ BME280_err_e BME280_write_mode(i2c_sensor_t sensor, BME280_mode_e mode)
     if(ret != ESP_OK)
     {
         ESP_LOGW(TAG, "Mode number: %d, Status: %s\r", mode, BME280_err_to_name(READING_FAIL));
+        ESP_ERROR_CHECK(ret);
         return READING_FAIL;
     }
 
@@ -36,6 +37,7 @@ BME280_err_e BME280_write_mode(i2c_sensor_t sensor, BME280_mode_e mode)
     if( ret != ESP_OK)
     {
         ESP_LOGW(TAG, "Mode number: %d, Status: %s\r", mode, BME280_err_to_name(WRITING_FAIL));
+        ESP_ERROR_CHECK(ret);
         return WRITING_FAIL;
     }else{
         ESP_LOGW(TAG, "Mode number: %d, Status: %s\r", mode, BME280_err_to_name(WRITING_OK));
@@ -54,6 +56,7 @@ BME280_err_e BME280_write_TimeStandby(i2c_sensor_t sensor, BME280_standby_time_e
     if(ret != ESP_OK)
     {
         ESP_LOGW(TAG, "Standby time mode: %d, Status: %s\r", time, BME280_err_to_name(READING_FAIL));
+        ESP_ERROR_CHECK(ret);
         return READING_FAIL;
     }
     
@@ -65,6 +68,7 @@ BME280_err_e BME280_write_TimeStandby(i2c_sensor_t sensor, BME280_standby_time_e
     if( ret != ESP_OK)
     {
         ESP_LOGW(TAG, "Standby time mode: %d, Status: %s\r", time, BME280_err_to_name(WRITING_FAIL));
+        ESP_ERROR_CHECK(ret);
         return WRITING_FAIL;
     }else{
         ESP_LOGW(TAG, "Standby time mode: %d, Status: %s\r", time, BME280_err_to_name(WRITING_OK));
@@ -82,6 +86,7 @@ BME280_err_e BME280_write_filtercoef(i2c_sensor_t sensor, BME280_filter_e filter
     if(ret != ESP_OK)
     {
         ESP_LOGW(TAG, "Filter mode: x%f, Status: %s\r", pow(filter_coef,2), BME280_err_to_name(READING_FAIL));
+        ESP_ERROR_CHECK(ret);
         return READING_FAIL;
     }
     
@@ -93,6 +98,7 @@ BME280_err_e BME280_write_filtercoef(i2c_sensor_t sensor, BME280_filter_e filter
     if( ret != ESP_OK)
     {
         ESP_LOGW(TAG, "Filter mode: x%f, Status: %s\r", pow(filter_coef,2), BME280_err_to_name(WRITING_FAIL));
+        ESP_ERROR_CHECK(ret);
         return WRITING_FAIL;
     }else{
         ESP_LOGW(TAG, "Filter mode: x%f, Status: %s\r", pow(filter_coef,2), BME280_err_to_name(WRITING_OK));
@@ -110,6 +116,7 @@ BME280_err_e BME280_write_oversamp_Temp(i2c_sensor_t sensor, BME280_oversampling
     if(ret != ESP_OK)
     {
         ESP_LOGW(TAG, "Temperature OverSampling mode: x%f, Status: %s\r", pow(osrs_T,2), BME280_err_to_name(READING_FAIL));
+        ESP_ERROR_CHECK(ret);
         return READING_FAIL;
     }
     
@@ -121,6 +128,7 @@ BME280_err_e BME280_write_oversamp_Temp(i2c_sensor_t sensor, BME280_oversampling
     if( ret != ESP_OK)
     {
         ESP_LOGW(TAG, "Temperature OverSampling mode: x%f, Status: %s\r", pow(osrs_T,2), BME280_err_to_name(WRITING_FAIL));
+        ESP_ERROR_CHECK(ret);
         return WRITING_FAIL;
     }else{
         ESP_LOGW(TAG, "Temperature OverSampling mode: x%f, Status: %s\r", pow(osrs_T,2), BME280_err_to_name(WRITING_OK));
@@ -138,6 +146,7 @@ BME280_err_e BME280_write_oversamp_Press(i2c_sensor_t sensor, BME280_oversamplin
     if(ret != ESP_OK)
     {
         ESP_LOGW(TAG, "Temperature OverSampling mode: x%f, Status: %s\r", pow(osrs_P,2), BME280_err_to_name(READING_FAIL));
+        ESP_ERROR_CHECK(ret);
         return READING_FAIL;
     }
     
@@ -149,6 +158,7 @@ BME280_err_e BME280_write_oversamp_Press(i2c_sensor_t sensor, BME280_oversamplin
     if( ret != ESP_OK)
     {
         ESP_LOGW(TAG, "Temperature OverSampling mode: x%f, Status: %s\r", pow(osrs_P,2), BME280_err_to_name(WRITING_FAIL));
+        ESP_ERROR_CHECK(ret);
         return WRITING_FAIL;
     }else{
         ESP_LOGW(TAG, "Temperature OverSampling mode: x%f, Status: %s\r", pow(osrs_P,2), BME280_err_to_name(WRITING_OK));
@@ -167,6 +177,7 @@ BME280_err_e BME280_write_oversamp_Hum(i2c_sensor_t sensor, BME280_oversampling_
     {
 
         ESP_LOGW(TAG, "Temperature OverSampling mode: x%f, Status: %s\r", pow(osrs_H,2), BME280_err_to_name(READING_FAIL));
+        ESP_ERROR_CHECK(ret);
         return READING_FAIL;
     }
     
@@ -178,6 +189,7 @@ BME280_err_e BME280_write_oversamp_Hum(i2c_sensor_t sensor, BME280_oversampling_
     if( ret != ESP_OK)
     {
         ESP_LOGW(TAG, "Temperature OverSampling mode: x%f, Status: %s\r", pow(osrs_H,2), BME280_err_to_name(WRITING_FAIL));
+        ESP_ERROR_CHECK(ret);
         return WRITING_FAIL;
     }else{
         ESP_LOGW(TAG, "Temperature OverSampling mode: x%f, Status: %s\r", pow(osrs_H,2), BME280_err_to_name(WRITING_OK));
@@ -195,6 +207,7 @@ BME280_err_e BME280_Reset_sensor(i2c_sensor_t sensor)
     if(ret != ESP_OK)
     {
         ESP_LOGW(TAG, "Reset sensor config failed, Status: %s\r", BME280_err_to_name(WRITING_FAIL));
+        ESP_ERROR_CHECK(ret);
         return WRITING_FAIL;
     }else{
         ESP_LOGW(TAG, "Reset sensor config OK, Status: %s\r", BME280_err_to_name(WRITING_OK));
@@ -228,6 +241,7 @@ esp_err_t BME280_config(i2c_sensor_t sensor, BME280_config_t config)
         ESP_LOGW(TAG, "/---------------------------------------------/");
         return WRITING_OK;
     }
+    ESP_ERROR_CHECK(ret);
     return WRITING_FAIL;
 }
 
@@ -240,13 +254,13 @@ int8_t BME280_Measuring(i2c_sensor_t sensor)
     uint8_t Meas_value = 255;
 
     esp_err_t ret = i2c_read_bit(sensor, STATUS_REG, &Meas_value);
-
     Meas_value &= 0b00001000;
     Meas_value = Meas_value >> 3;
 
     if(ret != ESP_OK)
     {
         ESP_LOGW(TAG, "Measuring value failed, ERROR Message : %s", esp_err_to_name(ret));
+        ESP_ERROR_CHECK(ret);
         return -1;
     }
 
@@ -266,6 +280,7 @@ int8_t BME280_Im_Update(i2c_sensor_t sensor)
     if(ret != ESP_OK)
     {
         ESP_LOGW(TAG, "Update read failed, ERROR Message : %s", esp_err_to_name(ret));
+        ESP_ERROR_CHECK(ret);
         return -1;
     }
 
@@ -283,6 +298,7 @@ int8_t BME280_Read_Chip_ID(i2c_sensor_t sensor)
     if(ret != ESP_OK)
     {
         ESP_LOGW(TAG, "Chip ID read failed, ERROR Message : %s", esp_err_to_name(ret));
+        ESP_ERROR_CHECK(ret);
         return -1;
     }
 
@@ -302,6 +318,7 @@ BME280_err_e BME280_Read_Compensation(i2c_sensor_t sensor)
     if(ret != ESP_OK)
     {
         ESP_LOGW(TAG, "Read calibration 1 failed, ERROR message : %s", esp_err_to_name(ret));
+        ESP_ERROR_CHECK(ret);
         return READING_FAIL;
     }
     CompenParam.dig_T1 = ((uint8_t)comp_tab[1] << 8) + (uint8_t)comp_tab[0];
@@ -323,6 +340,7 @@ BME280_err_e BME280_Read_Compensation(i2c_sensor_t sensor)
     if(ret != ESP_OK)
     {
         ESP_LOGW(TAG, "Read calibration 2 failed, ERROR message : %s", esp_err_to_name(ret));
+        ESP_ERROR_CHECK(ret);
         return READING_FAIL;
     }
     CompenParam.dig_H2 = (comp_tab2[1] << 8) + comp_tab2[0];
