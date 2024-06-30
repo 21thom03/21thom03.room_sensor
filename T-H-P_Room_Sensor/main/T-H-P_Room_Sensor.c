@@ -4,6 +4,7 @@
 /**********************************
  * Class and structur declaration
 ***********************************/
+wifi_id_t wifi[3];
 
 i2c_sensor_t BME280_sensor = {
     .port = I2C_PORT,
@@ -31,42 +32,54 @@ BME280_config_t BME280_sensor_conf = {
 /**********************************
  * Functions declarations
 **********************************/
-esp_err_t wifi_init_sta(void);
+esp_err_t wifi_init_sta(wifi_id_t wifi);
 esp_err_t wifi_disconnect(void);
 
 
 void app_main(void)
 {
-    // nvs_flash_init();
-    // wifi_init_sta();
-    // vTaskDelay(1000);
+    esp_err_t ret = ESP_FAIL;
 
-    int32_t raw_values[4] = {0};
-    int32_t press, temp, hum;
-    i2c_begin(BME280_sensor);
+    strncpy(wifi[1].ssid, "Livebox-FA70", 32);
+    strncpy(wifi[1].password, "C1409D1206M1408T2103N2702", 64);
+    strncpy(wifi[0].ssid, "Ouiii", 32);
+    strncpy(wifi[0].password, "Zbeubzbeub", 64);
+    strncpy(wifi[2].ssid, "ALIGUEST", 32);
+	strncpy(wifi[2].password, "AZERTYUI", 64);
 
-    BME280_Reset_sensor(BME280_sensor);
-    BME280_config(BME280_sensor,BME280_sensor_conf);
-    BME280_Read_Compensation(BME280_sensor);
+    nvs_flash_init();
 
-    int i;
-    while (1)
+    for(int try_wifi = 0; (try_wifi < WIFI_NUMBER) && (ret != ESP_OK); try_wifi ++)
     {
-        if(BME280_Measuring(BME280_sensor) > 0)
-        {
-                BME280_Read_T_P_H_values(BME280_sensor, raw_values);
-                temp = BME280_compensate_T_double(raw_values[0]);
-                printf("Temperature %2d °C\n", temp);
-                press = BME280_compensate_P_double(raw_values[1]);
-                printf("Pressure %d Pascal\n", press);
-                hum = BME280_compensate_H_double(raw_values[2]);
-                printf("Humidity %d \n", hum);
-                vTaskDelay(500);
-        }
-    }
-    
-    i2c_disconnected(BME280_sensor);
+        ret = wifi_init_sta(wifi[try_wifi]);
+    } 
+    vTaskDelay(1000);
 
-    // wifi_disconnect();
-    // nvs_flash_erase();
+    // int32_t raw_values[4] = {0};
+    // int32_t press, temp, hum;
+    // i2c_begin(BME280_sensor);
+
+    // BME280_Reset_sensor(BME280_sensor);
+    // BME280_config(BME280_sensor,BME280_sensor_conf);
+    // BME280_Read_Compensation(BME280_sensor);
+
+    // int i;
+    // while (1)
+    // {
+    //     if(BME280_Measuring(BME280_sensor) > 0)
+    //     {
+    //             BME280_Read_T_P_H_values(BME280_sensor, raw_values);
+    //             temp = BME280_compensate_T_double(raw_values[0]);
+    //             printf("Temperature %2d °C\n", temp);
+    //             press = BME280_compensate_P_double(raw_values[1]);
+    //             printf("Pressure %d Pascal\n", press);
+    //             hum = BME280_compensate_H_double(raw_values[2]);
+    //             printf("Humidity %d \n", hum);
+    //             vTaskDelay(500);
+    //     }
+    // }
+    
+    // i2c_disconnected(BME280_sensor);
+
+    nvs_flash_erase();
 }

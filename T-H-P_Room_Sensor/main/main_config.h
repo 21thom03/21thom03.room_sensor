@@ -28,10 +28,14 @@
 /**********************************
  * Wi-Fi configuration
 ***********************************/
-#define WIFI_SSID               "Livebox-FA70"  //"Ouiii"
-#define WIFI_PASSWORD           "C1409D1206M1408T2103N2702" //"Zbeubzbeub2103"      
+#define WIFI_NUMBER             3
 
-/**********************************
+typedef struct {
+    char ssid[32];
+    char password[64];
+} wifi_id_t;
+
+/***********************************
  * Constante definition
 ***********************************/
 #define I2C_MASTER_SDA_IO       21      

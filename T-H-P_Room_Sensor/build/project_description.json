@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "T-H-P_Room_Sensor",
-    "project_version":    "8fe4f08-dirty",
+    "project_version":    "5ae618b-dirty",
     "project_path":       "C:/Users/thomas.dacosta/Documents/21thom03.github/T-H-P_Room_Sensor",
     "idf_path":           "C:/Users/thomas.dacosta/esp/v4.4/esp-idf",
     "build_dir":          "C:/Users/thomas.dacosta/Documents/21thom03.github/T-H-P_Room_Sensor/build",
