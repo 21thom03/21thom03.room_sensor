@@ -31,24 +31,38 @@ int retry_num = 0;
 **********************************/
 
 enum {
-    NETIF_STATE_NOT_INITED     = 0x10,
-    NETIF_STATE_INIT           = 0x11,
-    NETIF_STATE_LOOP_CREATE    = 0x12,
-    NETIF_STATE_FAILED         = 0xE1,
-    NETIF_STATE_ERROR          = 0xE2,
+    NETIF_STATE_NOT_INITED          = 0x10,
+    NETIF_STATE_INIT                = 0x11,
+    NETIF_STATE_LOOP_CREATE         = 0x12,
+    NETIF_STATE_FAILED              = 0xE1,
+    NETIF_STATE_ERROR               = 0xE2,
 
-    WIFI_STATE_INIT            = 0x20,
-    WIFI_STATE_CREATE_DEFAULTS = 0x21,
-    WIFI_STATE_SET_HANDLERS    = 0x22,
+    WIFI_STATE_INIT                 = 0x20,
+    WIFI_STATE_CREATE_DEFAULTS      = 0x21,
+    WIFI_STATE_SET_HANDLERS         = 0x22,
 
-    WIFI_STATE_CONNECT         = 0x23,
-    WIFI_STATE_DISCONNECT      = 0x24,
+    WIFI_STATE_CONNECT              = 0x23,
+    WIFI_STATE_DISCONNECT           = 0x24,
 
-    WIFI_STATE_CONNECT_FAILED  = 0xE3,
-    WIFI_STATE_CONNECT_SUCCESS = 0x25,
-    WIFI_STATE_CONNECT_TRY     = 0x26,
-    WIFI_STATE_SWITCH          = 0x31,
-    WIFI_STATE_SCAN_BOOT       = 0x41,
+    WIFI_STATE_CONNECT_FAILED       = 0xE3,
+    WIFI_STATE_CONNECT_SUCCESS      = 0x25,
+    WIFI_STATE_CONNECT_TRY          = 0x26,
+    WIFI_STATE_SWITCH               = 0x31,
+    WIFI_STATE_SCAN_BOOT            = 0x41,
+
+    WIFI_EVENT_WIFI_READY           = 0x01,
+    WIFI_EVENT_STA_START            = 0x02,
+    WIFI_EVENT_STA_CONNECTED        = 0x03,
+    WIFI_EVENT_STA_STOP             = 0x04,
+    WIFI_EVENT_STA_DISCONNECTED     = 0x05,
+    WIFI_EVENT_SCAN_DONE            = 0x06,
+
+    WIFI_EVENT_AP_START             = 0x07,
+    WIFI_EVENT_AP_STACONNECTED      = 0x08,
+    WIFI_EVENT_AP_STOP              = 0x09,
+    WIFI_EVENT_AP_STADISCONNECTED   = 0xF1,
+    WIFI_EVENT_AP_PROBEREQRECVED    = 0xF2,
+    WIFI_EVENT_STA_BEACON_TIMEOUT   = 0xF3
 };
 
 /**********************************
@@ -63,7 +77,7 @@ static void wifi_ip_event_handler(void* arg, esp_event_base_t event_base, int32_
         switch(event_id)
         {
             case WIFI_EVENT_WIFI_READY:
-
+            
             case WIFI_EVENT_STA_START:
 
             case WIFI_EVENT_STA_CONNECTED:
