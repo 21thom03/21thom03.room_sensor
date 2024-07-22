@@ -50,20 +50,25 @@ enum {
     WIFI_STATE_SWITCH               = 0x31,
     WIFI_STATE_SCAN_BOOT            = 0x41,
 
-    WIFI_EVENT_WIFI_READY           = 0x01,
-    WIFI_EVENT_STA_START            = 0x02,
-    WIFI_EVENT_STA_CONNECTED        = 0x03,
-    WIFI_EVENT_STA_STOP             = 0x04,
-    WIFI_EVENT_STA_DISCONNECTED     = 0x05,
-    WIFI_EVENT_SCAN_DONE            = 0x06,
+    WIFI_EVENT_WIFI_READY           = 0xA1,
+    WIFI_EVENT_SCAN_DONE            = 0xA2,
+    WIFI_EVENT_STA_CONNECTED        = 0xA3,
+    WIFI_EVENT_STA_STOP             = 0xA4,
+    WIFI_EVENT_STA_DISCONNECTED     = 0xA5,
+    WIFI_EVENT_STA_START            = 0xA6,
+    WIFI_EVENT_STA_BEACON_TIMEOUT   = 0xA7,
 
-    WIFI_EVENT_AP_START             = 0x07,
-    WIFI_EVENT_AP_STACONNECTED      = 0x08,
-    WIFI_EVENT_AP_STOP              = 0x09,
-    WIFI_EVENT_AP_STADISCONNECTED   = 0xF1,
-    WIFI_EVENT_AP_PROBEREQRECVED    = 0xF2,
-    WIFI_EVENT_STA_BEACON_TIMEOUT   = 0xF3
+    WIFI_EVENT_AP_START             = 0xB1,
+    WIFI_EVENT_AP_STACONNECTED      = 0xB2,
+    WIFI_EVENT_AP_STOP              = 0xB3,
+    WIFI_EVENT_AP_STADISCONNECTED   = 0xB4,
+    WIFI_EVENT_AP_PROBEREQRECVED    = 0xB5,
+
+    IP_EVENT_STA_GOT_IP             = 0xF1,
+    IP_EVENT_GOT_IP6                = 0xF2,
+    IP_EVENT_STA_LOST_IP            = 0xF3
 };
+
 
 /**********************************
  * Functions code
