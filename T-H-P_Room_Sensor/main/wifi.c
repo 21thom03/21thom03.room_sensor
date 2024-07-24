@@ -105,8 +105,9 @@ static void wifi_ip_event_handler(void* arg, esp_event_base_t event_base, int32_
                     ESP_LOGI(TAG, "retry to connect to the AP");
                 } else {
                     xEventGroupSetBits(s_wifi_event_group, WIFI_FAIL_BIT);
+                    ESP_LOGE(TAG, "Connection to wifi with ssid : %s and password : %s, was failed",  )
                 }
-                ESP_LOGI(TAG,"connect to the AP fail");
+
                 break;
 
             /*****AP station event ******/
@@ -141,6 +142,7 @@ static void wifi_ip_event_handler(void* arg, esp_event_base_t event_base, int32_
 void task_network(void* pvParameter)
 {
     esp_err_t ret;
+    int retry_error = 0;
     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
     s_wifi_event_group = xEventGroupCreate();
 
@@ -162,7 +164,7 @@ void task_network(void* pvParameter)
                     netif_init = false;
                     next_wifi_state_id = NETIF_STATE_ERROR;
                 } else {
-                    netif_init = true;
+                    retry_error = 0;
                     next_wifi_state_id = NETIF_STATE_LOOP_CREATE;
                 }
                 break;
@@ -170,8 +172,8 @@ void task_network(void* pvParameter)
             case NETIF_STATE_INIT:   
                 vTaskDelay(100);
                 ESP_LOGI(TAG, "Netif initialise !");
-                wifi_state_id = 
-
+                netif_init = true;
+                next_wifi_state_id = WIFI_STATE_CREATE_DEFAULTS;
                 break;
 
             case NETIF_STATE_LOOP_CREATE:
@@ -180,24 +182,82 @@ void task_network(void* pvParameter)
                 {
                     ESP_LOGE(TAG,"Netif creation of event loop failed, error : %s", esp_err_to_name(ret));
                     old_wifi_state_id = NETIF_STATE_LOOP_CREATE;
-                    wifi_state_id = NETIF_STATE_ERROR;
+                    next_wifi_state_id = NETIF_STATE_ERROR;
                 } else {
+                    retry_error = 0;
                     netif_loop_init = true;
-                    wifi_state_id = NETIF_STATE_INIT;
+                    next_wifi_state_id = NETIF_STATE_INIT;
                 }
                 break;
 
             case NETIF_STATE_FAILED:    
+                ESP_LOGE(TAG, "Netif initialisation stop, it's failed!");
+
+                next_wifi_state_id = NETIF_STATE_NOT_INITED;
+                break;
 
             case NETIF_STATE_ERROR: 
                 vTaskDelay(100);
+                if(old_wifi_state_id == NETIF_STATE_NOT_INITED)
+                {
+                    if(retry_error < RETRY_NUMBER)
+                    {
+                    retry_error ++;
+                    next_wifi_state_id = NETIF_STATE_NOT_INITED;
+                    }
+                } else if(old_wifi_state_id == NETIF_STATE_LOOP_CREATE){
+                    if(retry_error < RETRY_NUMBER)
+                    {
+                    retry_error ++;
+                    next_wifi_state_id = NETIF_STATE_NOT_INITED;
+                    }
+                } else {
+                    netif_init = false;
+                    netif_loop_init = false;
+                    next_wifi_state_id = NETIF_STATE_FAILED;
+                }
+                break;
 
-            case WIFI_STATE_INIT:            
+/******************** Wifi state  */
 
-            case WIFI_STATE_CREATE_DEFAULTS:  
-                ESP_ERROR_CHECK(esp_wifi_init(&cfg));
+            case WIFI_STATE_INIT:
+                ret = esp_wifi_set_mode(WIFI_MODE_STA);
+                if(ret) ret = esp_wifi_set_config(WIFI_IF_STA, &wifi_config);
+                if(ret)
+                {
+                    ESP_LOGE(TAG, "Wifi configuration failed! Error: %s", esp_err_to_name(ret));
+                } else {
+                    ESP_LOGI(TAG, "Wifi configurate with success ! SSID: %s, Password: %s", ); //ajouter les config wifi
+                }
+                break;
+                
+            case WIFI_STATE_CREATE_DEFAULTS:
+                pvWifi_sta = esp_netif_create_default_wifi_sta();
+                ret = esp_wifi_init(&cfg);
+                if(ret != ESP_OK)
+                {
+                    ESP_LOGE(TAG, "Wifi creacte with defaults parameters failed ! Error : %s", esp_err_to_name(ret));
+                } else {
+                    ESP_LOGI(TAG, "Wifi creacte with defaults parameters!");
+                    next_wifi_state_id = WIFI_STATE_SET_HANDLERS;
+                }
+                break;
 
             case WIFI_STATE_SET_HANDLERS:         
+                esp_event_handler_instance_t instance_any_id;
+                esp_event_handler_instance_t instance_got_ip;
+                ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT,
+                                                                    ESP_EVENT_ANY_ID,
+                                                                    &wifi_ip_event_handler,
+                                                                    NULL,
+                                                                    &instance_any_id));
+                ESP_ERROR_CHECK(esp_event_handler_instance_register(IP_EVENT,
+                                                                    IP_EVENT_STA_GOT_IP,
+                                                                    &wifi_ip_event_handler,
+                                                                    NULL,
+                                                                    &instance_got_ip));
+                next_wifi_state_id = WIFI_STATE_INIT;
+                break;
 
             case WIFI_STATE_CONNECT:     
 
@@ -205,34 +265,11 @@ void task_network(void* pvParameter)
 
             case WIFI_STATE_CONNECT_FAILED:   
 
-            case WIFI_STATE_CONNECT_SUCCESS:  
-
             case WIFI_STATE_CONNECT_TRY:    
 
             case WIFI_STATE_SWITCH:     
 
             case WIFI_STATE_SCAN_BOOT:
-    
- 
-            vTaskDelay(100);
-            esp_netif_create_default_wifi_sta();
-
-
-
-            esp_event_handler_instance_t instance_any_id;
-            esp_event_handler_instance_t instance_got_ip;
-            ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT,
-                                                                ESP_EVENT_ANY_ID,
-                                                                &wifi_ip_event_handler,
-                                                                NULL,
-                                                                &instance_any_id));
-            ESP_ERROR_CHECK(esp_event_handler_instance_register(IP_EVENT,
-                                                                IP_EVENT_STA_GOT_IP,
-                                                                &wifi_ip_event_handler,
-                                                                NULL,
-                                                                &instance_got_ip));
-
-            wifi_config_t wifi_config;
         }
     }
 }
