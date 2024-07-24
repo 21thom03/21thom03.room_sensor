@@ -19,15 +19,19 @@ bool wifi_init = false;
 bool wifi_default_sta_inited = false;
 bool wifi_event_inited = false;
 
-/**** Global variables */
+/****Global variables */
 esp_netif_t * pvWifi_sta;
 esp_netif_t * pvWifi_ap;
+
+uint16_t wifi_state_id;
+uint16_t next_wifi_state_id;
+int16_t old_wifi_state_id = -1;
 EventGroupHandle_t s_wifi_event_group;
 wifi_config_t wifi_config;
 int retry_num = 0;
 
 /**********************************
- * Enum and states
+ * Event and states enum
 **********************************/
 
 enum {
@@ -49,7 +53,9 @@ enum {
     WIFI_STATE_CONNECT_TRY          = 0x26,
     WIFI_STATE_SWITCH               = 0x31,
     WIFI_STATE_SCAN_BOOT            = 0x41,
+};
 
+enum {
     WIFI_EVENT_WIFI_READY           = 0xA1,
     WIFI_EVENT_SCAN_DONE            = 0xA2,
     WIFI_EVENT_STA_CONNECTED        = 0xA3,
@@ -69,7 +75,6 @@ enum {
     IP_EVENT_STA_LOST_IP            = 0xF3
 };
 
-
 /**********************************
  * Functions code
 **********************************/
@@ -82,23 +87,34 @@ static void wifi_ip_event_handler(void* arg, esp_event_base_t event_base, int32_
         switch(event_id)
         {
             case WIFI_EVENT_WIFI_READY:
+
+            case WIFI_EVENT_SCAN_DONE:
             
             case WIFI_EVENT_STA_START:
-
-            case WIFI_EVENT_STA_CONNECTED:
+                esp_wifi_connect();
+                break;
 
             case WIFI_EVENT_STA_STOP:
 
-            case WIFI_EVENT_STA_DISCONNECTED:
+            case WIFI_EVENT_STA_CONNECTED:
 
-            case WIFI_EVENT_SCAN_DONE:
+            case WIFI_EVENT_STA_DISCONNECTED:
+                if (retry_num < RETRY_NUMBER) {
+                    esp_wifi_connect();
+                    retry_num++;
+                    ESP_LOGI(TAG, "retry to connect to the AP");
+                } else {
+                    xEventGroupSetBits(s_wifi_event_group, WIFI_FAIL_BIT);
+                }
+                ESP_LOGI(TAG,"connect to the AP fail");
+                break;
 
             /*****AP station event ******/
             case WIFI_EVENT_AP_START:
 
-            case WIFI_EVENT_AP_STACONNECTED:
-
             case WIFI_EVENT_AP_STOP:
+
+            case WIFI_EVENT_AP_STACONNECTED:
 
             case WIFI_EVENT_AP_STADISCONNECTED:
 
@@ -111,30 +127,116 @@ static void wifi_ip_event_handler(void* arg, esp_event_base_t event_base, int32_
         switch(event_id)
         {
             case IP_EVENT_STA_GOT_IP:
+                ip_event_got_ip_t* event = (ip_event_got_ip_t*) event_data;
+                ESP_LOGI(TAG, "got ip:" IPSTR, IP2STR(&event->ip_info.ip));
+                break;
 
             case IP_EVENT_GOT_IP6:
 
             case IP_EVENT_STA_LOST_IP:
         }
     }
-    if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
-        esp_wifi_connect();
-    } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
-        if (retry_num < RETRY_NUMBER) {
-            esp_wifi_connect();
-            retry_num++;
-            ESP_LOGI(TAG, "retry to connect to the AP");
-        } else {
-            xEventGroupSetBits(s_wifi_event_group, WIFI_FAIL_BIT);
+}
+
+void task_network(void* pvParameter)
+{
+    esp_err_t ret;
+    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+    s_wifi_event_group = xEventGroupCreate();
+
+    while(1)
+    {   
+        if(wifi_state_id != next_wifi_state_id)
+        {
+            old_wifi_state_id = wifi_state_id;
+            wifi_state_id = next_wifi_state_id;
         }
-        ESP_LOGI(TAG,"connect to the AP fail");
-    } else if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP) {
-        ip_event_got_ip_t* event = (ip_event_got_ip_t*) event_data;
-        ESP_LOGI(TAG, "got ip:" IPSTR, IP2STR(&event->ip_info.ip));
-        retry_num = 0;
-        xEventGroupSetBits(s_wifi_event_group, WIFI_CONNECTED_BIT);
+
+        switch(wifi_state_id)
+        {
+            case NETIF_STATE_NOT_INITED:
+                ESP_LOGI(TAG,"Netif initialisation ...");
+                ret = esp_netif_init();
+                if(ret != ESP_OK){
+                    ESP_LOGE(TAG,"Netif initialisation failed, error : %s", esp_err_to_name(ret));
+                    netif_init = false;
+                    next_wifi_state_id = NETIF_STATE_ERROR;
+                } else {
+                    netif_init = true;
+                    next_wifi_state_id = NETIF_STATE_LOOP_CREATE;
+                }
+                break;
+
+            case NETIF_STATE_INIT:   
+                vTaskDelay(100);
+                ESP_LOGI(TAG, "Netif initialise !");
+                wifi_state_id = 
+
+                break;
+
+            case NETIF_STATE_LOOP_CREATE:
+                ret = esp_event_loop_create_default();
+                if(ret !=  ESP_OK)
+                {
+                    ESP_LOGE(TAG,"Netif creation of event loop failed, error : %s", esp_err_to_name(ret));
+                    old_wifi_state_id = NETIF_STATE_LOOP_CREATE;
+                    wifi_state_id = NETIF_STATE_ERROR;
+                } else {
+                    netif_loop_init = true;
+                    wifi_state_id = NETIF_STATE_INIT;
+                }
+                break;
+
+            case NETIF_STATE_FAILED:    
+
+            case NETIF_STATE_ERROR: 
+                vTaskDelay(100);
+
+            case WIFI_STATE_INIT:            
+
+            case WIFI_STATE_CREATE_DEFAULTS:  
+                ESP_ERROR_CHECK(esp_wifi_init(&cfg));
+
+            case WIFI_STATE_SET_HANDLERS:         
+
+            case WIFI_STATE_CONNECT:     
+
+            case WIFI_STATE_DISCONNECT:         
+
+            case WIFI_STATE_CONNECT_FAILED:   
+
+            case WIFI_STATE_CONNECT_SUCCESS:  
+
+            case WIFI_STATE_CONNECT_TRY:    
+
+            case WIFI_STATE_SWITCH:     
+
+            case WIFI_STATE_SCAN_BOOT:
+    
+ 
+            vTaskDelay(100);
+            esp_netif_create_default_wifi_sta();
+
+
+
+            esp_event_handler_instance_t instance_any_id;
+            esp_event_handler_instance_t instance_got_ip;
+            ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT,
+                                                                ESP_EVENT_ANY_ID,
+                                                                &wifi_ip_event_handler,
+                                                                NULL,
+                                                                &instance_any_id));
+            ESP_ERROR_CHECK(esp_event_handler_instance_register(IP_EVENT,
+                                                                IP_EVENT_STA_GOT_IP,
+                                                                &wifi_ip_event_handler,
+                                                                NULL,
+                                                                &instance_got_ip));
+
+            wifi_config_t wifi_config;
+        }
     }
 }
+
 
 esp_err_t wifi_init(wifi_id_t wifi)
 {
@@ -202,28 +304,28 @@ esp_err_t wifi_disconnect(void)
     return ret;
 }
 
-/************************************************* */
-static void event_handler(void* arg, esp_event_base_t event_base,
-                                int32_t event_id, void* event_data)
-{
-    if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
-        esp_wifi_connect();
-    } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
-        if (retry_num < RETRY_NUMBER) {
-            esp_wifi_connect();
-            retry_num++;
-            ESP_LOGI(TAG, "retry to connect to the AP");
-        } else {
-            xEventGroupSetBits(s_wifi_event_group, WIFI_FAIL_BIT);
-        }
-        ESP_LOGI(TAG,"connect to the AP fail");
-    } else if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP) {
-        ip_event_got_ip_t* event = (ip_event_got_ip_t*) event_data;
-        ESP_LOGI(TAG, "got ip:" IPSTR, IP2STR(&event->ip_info.ip));
-        retry_num = 0;
-        xEventGroupSetBits(s_wifi_event_group, WIFI_CONNECTED_BIT);
-    }
-}
+// /************************************************* */
+// static void event_handler(void* arg, esp_event_base_t event_base,
+//                                 int32_t event_id, void* event_data)
+// {
+//     if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
+//         esp_wifi_connect();
+//     } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
+//         if (retry_num < RETRY_NUMBER) {
+//             esp_wifi_connect();
+//             retry_num++;
+//             ESP_LOGI(TAG, "retry to connect to the AP");
+//         } else {
+//             xEventGroupSetBits(s_wifi_event_group, WIFI_FAIL_BIT);
+//         }
+//         ESP_LOGI(TAG,"connect to the AP fail");
+//     } else if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP) {
+//         ip_event_got_ip_t* event = (ip_event_got_ip_t*) event_data;
+//         ESP_LOGI(TAG, "got ip:" IPSTR, IP2STR(&event->ip_info.ip));
+//         retry_num = 0;
+//         xEventGroupSetBits(s_wifi_event_group, WIFI_CONNECTED_BIT);
+//     }
+// }
 
 esp_err_t wifi_init_sta(wifi_id_t wifi)
 {
