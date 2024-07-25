@@ -16,6 +16,7 @@
 #include "esp_err.h"
 #include "esp_log.h"
 
+#include "esp_sntp.h"
 #include "lwip/err.h"
 #include "lwip/sys.h"
 #include "driver/i2c.h"
@@ -32,6 +33,7 @@
 
 typedef struct {
     char ssid[32];
+    char bssid[6];
     char password[64];
 } wifi_id_t;
 
@@ -44,5 +46,10 @@ typedef struct {
 #define I2C_MASTER_FREQ_HZ      100000      //100Kh
 
 #define I2C_PORT                I2C_NUM_0
+
+/***********************************
+ * Global Varibles
+***********************************/
+wifi_id_t wifi[WIFI_NUMBER];
 
 #endif /* end of MAIN_CONFIG_H_ */

@@ -34,11 +34,12 @@ BME280_config_t BME280_sensor_conf = {
 **********************************/
 esp_err_t wifi_init_sta(wifi_id_t wifi);
 esp_err_t wifi_disconnect(void);
+void task_network(void* pvParameter);
 
 
 void app_main(void)
 {
-    esp_err_t ret = ESP_FAIL;
+    esp_err_t ret;
 
     strncpy(wifi[1].ssid, "Livebox-FA70", 32);
     strncpy(wifi[1].password, "C1409D1206M1408T2103N2702", 64);
@@ -47,13 +48,21 @@ void app_main(void)
     strncpy(wifi[2].ssid, "ALIGUEST", 32);
 	strncpy(wifi[2].password, "AZERTYUI", 64);
 
-    nvs_flash_init();
+	ret = nvs_flash_init();
+	if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
+		ESP_ERROR_CHECK(nvs_flash_erase());
+        printf("/nNVS reinit!");
+		ret = nvs_flash_init();
+	}
+	ESP_ERROR_CHECK(ret);
 
-    for(int try_wifi = 0; (try_wifi < WIFI_NUMBER) && (ret != ESP_OK); try_wifi ++)
-    {
-        ret = wifi_init_sta(wifi[try_wifi]);
-    } 
-    vTaskDelay(1000);
+    vTaskDelay(10);
+	xTaskCreate(task_network, "task-network", 10 * 1024, NULL, 7, NULL);
+    // for(int try_wifi = 0; (try_wifi < WIFI_NUMBER) && (ret != ESP_OK); try_wifi ++)
+    // {
+    //     ret = wifi_init_sta(wifi[try_wifi]);
+    // } 
+    // vTaskDelay(1000);
 
     // int32_t raw_values[4] = {0};
     // int32_t press, temp, hum;
@@ -80,6 +89,4 @@ void app_main(void)
     // }
     
     // i2c_disconnected(BME280_sensor);
-
-    nvs_flash_erase();
 }
