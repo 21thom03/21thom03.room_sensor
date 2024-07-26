@@ -4,16 +4,16 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "C:/Users/thomas.dacosta/esp/v4.4/esp-idf/components/bootloader/subproject"
-  "C:/Users/thomas.dacosta/Documents/21thom03.room_sensor/T-H-P_Room_Sensor/build/bootloader"
-  "C:/Users/thomas.dacosta/Documents/21thom03.room_sensor/T-H-P_Room_Sensor/build/bootloader-prefix"
-  "C:/Users/thomas.dacosta/Documents/21thom03.room_sensor/T-H-P_Room_Sensor/build/bootloader-prefix/tmp"
-  "C:/Users/thomas.dacosta/Documents/21thom03.room_sensor/T-H-P_Room_Sensor/build/bootloader-prefix/src/bootloader-stamp"
-  "C:/Users/thomas.dacosta/Documents/21thom03.room_sensor/T-H-P_Room_Sensor/build/bootloader-prefix/src"
-  "C:/Users/thomas.dacosta/Documents/21thom03.room_sensor/T-H-P_Room_Sensor/build/bootloader-prefix/src/bootloader-stamp"
+  "/Users/thom/Documents/esp-idf/v4.4/esp-idf/components/bootloader/subproject"
+  "/Users/thom/Documents/GitHub/21thom03.room_sensor/T-H-P_Room_Sensor/build/bootloader"
+  "/Users/thom/Documents/GitHub/21thom03.room_sensor/T-H-P_Room_Sensor/build/bootloader-prefix"
+  "/Users/thom/Documents/GitHub/21thom03.room_sensor/T-H-P_Room_Sensor/build/bootloader-prefix/tmp"
+  "/Users/thom/Documents/GitHub/21thom03.room_sensor/T-H-P_Room_Sensor/build/bootloader-prefix/src/bootloader-stamp"
+  "/Users/thom/Documents/GitHub/21thom03.room_sensor/T-H-P_Room_Sensor/build/bootloader-prefix/src"
+  "/Users/thom/Documents/GitHub/21thom03.room_sensor/T-H-P_Room_Sensor/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/Users/thomas.dacosta/Documents/21thom03.room_sensor/T-H-P_Room_Sensor/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/Users/thom/Documents/GitHub/21thom03.room_sensor/T-H-P_Room_Sensor/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
