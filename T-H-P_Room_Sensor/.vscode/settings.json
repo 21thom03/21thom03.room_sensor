@@ -2,7 +2,14 @@
     "idf.adapterTargetName": "esp32",
     "files.associations": {
         "stdio.h": "c",
-        "compare": "c"
+        "compare": "c",
+        "array": "c",
+        "bitset": "c",
+        "string_view": "c",
+        "format": "c",
+        "initializer_list": "c",
+        "span": "c",
+        "regex": "c"
     },
     "idf.openOcdConfigs": [
         "board/esp32-wrover-kit-3.3v.cfg"

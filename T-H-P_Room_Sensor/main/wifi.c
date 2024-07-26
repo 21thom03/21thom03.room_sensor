@@ -38,6 +38,7 @@ enum {
  * Variables
 **********************************/
 const char *TAG = "WiFi station";
+const char *TAG_EVENT = "Wifi_Event";
 
 /****Initialisation variables */
 bool netif_init_b = false;
@@ -54,12 +55,11 @@ uint16_t wifi_state_id = NETIF_STATE_NOT_INITED;
 uint16_t next_wifi_state_id = NETIF_STATE_NOT_INITED;
 int16_t old_wifi_state_id = -1;
 
-esp_event_handler_instance_t instance_any_id;
-esp_event_handler_instance_t instance_got_ip;
-EventGroupHandle_t s_wifi_event_group;
+
 wifi_config_t wifi_config;
 wifi_ap_record_t wifi_scan_list[WIFI_SCAN_NUMBER];
-int scan_wifi_number = WIFI_SCAN_NUMBER;
+uint16_t scan_wifi_number = WIFI_SCAN_NUMBER;
+uint16_t* pvscan_wifi_number = &scan_wifi_number;
 wifi_scan_config_t config_wifi_scan = {
     .ssid = 0,
     .bssid = 0,
@@ -69,8 +69,12 @@ wifi_scan_config_t config_wifi_scan = {
     // .scan_time = 
     // .home_chan_dwell_time =
 };
+int know_wifi = -1;
 
-//IP varibles
+/***************Event Variables */
+esp_event_handler_instance_t instance_any_id;
+esp_event_handler_instance_t instance_got_ip;
+EventGroupHandle_t s_wifi_event_group;
 ip_event_got_ip_t* ip_event;
 
 int retry_num = 0;
@@ -79,14 +83,14 @@ int retry_num = 0;
  * Functions code
 **********************************/
 
-int wifi_search_list(wifi_ap_record_t* scan_list, wifi_id_t* wifi_list)
+int wifi_search_list(wifi_ap_record_t* scan_list, wifi_id_t* wifi_list, int num)
 {
     int wifi_find = -1;
-    size_t scan_number = sizeof(&scan_list) / sizeof(wifi_ap_record_t);
+    // size_t scan_number = sizeof(&scan_list) / sizeof(wifi_ap_record_t);
 
     for(int wifi_i = 0; (wifi_i < WIFI_NUMBER) && (wifi_find < 0); wifi_i ++)
     {
-        for(int scan_i = 0; (scan_i < (int)scan_number) && (wifi_find < 0); scan_i ++)
+        for(int scan_i = 0; (scan_i < num) && (wifi_find < 0); scan_i ++)
         {
             if(strcmp((const char *)scan_list[scan_i].ssid, (const char *)wifi_list[wifi_i].ssid) == 0)
             wifi_find = wifi_i;
@@ -95,42 +99,53 @@ int wifi_search_list(wifi_ap_record_t* scan_list, wifi_id_t* wifi_list)
     return wifi_find;
 }
 
+void wifi_display(wifi_ap_record_t* scan_list, int num)
+{
+    // size_t scan_number = sizeof(&scan_list) / sizeof(wifi_ap_record_t);
+    ESP_LOGI(TAG, "%d wifi was scanned!", num);
+    ESP_LOGI(TAG, "*********Wifi Scan list*********");
+    for(int i_display = 0; i_display < num; i_display ++)
+    {
+        ESP_LOGI(TAG, "Wifi[%d] SSID : %s", i_display, scan_list[i_display].ssid);
+    }
+}
+
 static void wifi_ip_event_handler(void* arg, esp_event_base_t event_base, int32_t event_id, void* event_data)
 {
     esp_err_t ret;
     if( event_base == WIFI_EVENT)
     {
+        ESP_LOGE(TAG_EVENT, "Wifi event works");
         switch(event_id)
         {
             case ESP_EVENT_ANY_ID:
-                ESP_LOGI(TAG, "Wifi event start!");
+                ESP_LOGI(TAG_EVENT, "Wifi event start!");
                 break;
             case WIFI_EVENT_WIFI_READY:
-                ESP_LOGI(TAG, "Wifi ready to work!");
+                ESP_LOGI(TAG_EVENT, "Wifi ready to work!");
                 break;
 
             case WIFI_EVENT_SCAN_DONE:
-                ESP_LOGI(TAG, "Wifi scan finished!");
-            
+                ESP_LOGI(TAG_EVENT, "Wifi scan finished!");
                 break;
 
             case WIFI_EVENT_STA_START:
-                ESP_LOGI(TAG, "Wifi was start!");
+                ESP_LOGI(TAG_EVENT, "Wifi was start!");
                 esp_wifi_connect();
                 break;
 
             case WIFI_EVENT_STA_STOP:
-                ESP_LOGI(TAG, "Wifi was stop!");
+                ESP_LOGI(TAG_EVENT, "Wifi was stop!");
                 break;
             case WIFI_EVENT_STA_CONNECTED:
-                ESP_LOGI(TAG, "Wifi was connected!");
+                ESP_LOGI(TAG_EVENT, "Wifi was connected!");
                 break;
 
             case WIFI_EVENT_STA_DISCONNECTED:
                 if (retry_num < RETRY_NUMBER) {
                     esp_wifi_connect();
                     retry_num++;
-                    ESP_LOGI(TAG, "retry to connect to the AP");
+                    ESP_LOGI(TAG_EVENT, "retry to connect to the AP");
                 } else {
                     xEventGroupSetBits(s_wifi_event_group, WIFI_FAILED_BIT);
                     // ESP_LOGE(TAG, "Connection to wifi with ssid : %s and password : %s, was failed",  );
@@ -262,24 +277,8 @@ void task_network(void* pvParameter)
                     wifi_default_sta_inited = true;
                     ESP_LOGI(TAG, "Wifi creacte with defaults parameters!");
                 }
-                    next_wifi_state_id = WIFI_STATE_SET_HANDLERS;
+                    next_wifi_state_id = WIFI_STATE_INIT_SYSTEM;
                 break;
-
-            case WIFI_STATE_SET_HANDLERS:         
-
-                ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT,
-                                                                    ESP_EVENT_ANY_ID,
-                                                                    &wifi_ip_event_handler,
-                                                                    NULL,
-                                                                    &instance_any_id));
-                ESP_ERROR_CHECK(esp_event_handler_instance_register(IP_EVENT,
-                                                                    IP_EVENT_STA_GOT_IP,
-                                                                    &wifi_ip_event_handler,
-                                                                    NULL,
-                                                                    &instance_got_ip));
-                ESP_LOGI(TAG, "Wifi instance handler set !");
-                next_wifi_state_id = WIFI_STATE_INIT_SYSTEM;
-                break;  
 
             case WIFI_STATE_INIT_SYSTEM:
                 if(wifi_event_inited == false)
@@ -294,40 +293,72 @@ void task_network(void* pvParameter)
                     }
                     wifi_event_inited = true;
                 }
-                next_wifi_state_id = WIFI_STATE_SCAN_BOOT;
+                next_wifi_state_id = WIFI_STATE_SET_HANDLERS;
                 break;
 
+            case WIFI_STATE_SET_HANDLERS:         
+
+                ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT,
+                                                                    WIFI_EVENT_WIFI_READY,
+                                                                    &wifi_ip_event_handler,
+                                                                    NULL,
+                                                                    &instance_any_id));
+                ESP_ERROR_CHECK(esp_event_handler_instance_register(IP_EVENT,
+                                                                    IP_EVENT_STA_GOT_IP,
+                                                                    &wifi_ip_event_handler,
+                                                                    NULL,
+                                                                    &instance_got_ip));
+                ESP_ERROR_CHECK(esp_event_post(WIFI_EVENT, WIFI_EVENT_STA_CONNECTED, NULL, sizeof(0), portMAX_DELAY));
+                // ret = (esp_event_post(IP_EVENT, IP_EVENT_STA_GOT_IP, NULL, sizeof(0), portMAX_DELAY));
+                // printf("ret = %s", esp_err_to_name(ret));
+                ESP_LOGI(TAG, "Wifi instance handler set!");
+                next_wifi_state_id = WIFI_STATE_SCAN_BOOT;
+                break;  
+
+
             case WIFI_STATE_SCAN_BOOT:
+                ESP_ERROR_CHECK(esp_wifi_set_storage(WIFI_STORAGE_FLASH)); 
+                ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));   
+                ESP_ERROR_CHECK(esp_wifi_start());
                 ret = esp_wifi_clear_ap_list();
-                if(ret)
+                if(ret == ESP_OK)
                 {
-                    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
-                    ret = esp_wifi_scan_start(&config_wifi_scan, true);
-                    if(ret)
+                    esp_wifi_scan_start(&config_wifi_scan, true);
+                    if(ret == ESP_OK)
                     {
-                        esp_wifi_scan_get_ap_records(scan_wifi_number, wifi_scan_list);
-                        int wifi_scanning_number = 0;
-                        esp_wifi_scan_get_ap_num(&wifi_scanning_number);
-                        printf("Wifi scan %d\n", wifi_scanning_number);
-                        int know_wifi = wifi_search_list(wifi_scan_list, wifi);
+                        esp_wifi_scan_get_ap_num(&scan_wifi_number);
+                        esp_wifi_scan_get_ap_records(&scan_wifi_number, wifi_scan_list);
+
+                        wifi_display(wifi_scan_list, scan_wifi_number);
+                        know_wifi = wifi_search_list(wifi_scan_list, wifi, scan_wifi_number);
                         
                         if(know_wifi < 0)
                         {
                             ESP_LOGW(TAG, "No wifi is known in the search list!");
                             next_wifi_state_id = 0;
                         } else {
-                        E   SP_LOGI(TAG, "Wifi find, SSID: %s", wifi[know_wifi].ssid);
+                            ESP_LOGI(TAG, "Wifi find, SSID: %s\n",wifi[know_wifi].ssid);
                         }
                     }
                 }
+                ESP_ERROR_CHECK(esp_wifi_stop());
+                next_wifi_state_id = WIFI_STATE_CONNECT_TRY;
                 break;
 
             case WIFI_STATE_CONNECT_TRY:   
                     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
+
+                    strcpy(&wifi_config.sta.ssid,wifi[know_wifi].ssid);
+                    strcpy(&wifi_config.sta.password,wifi[know_wifi].password);
                     ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_config));
-                    esp_wifi_connect();
-                    ESP_LOGI(TAG, "Wifi try to connect!");
+
+                    esp_wifi_start();
+                    ret = esp_wifi_connect();
+                    ESP_LOGI(TAG, "Wifi try to connect! ret %s", esp_err_to_name(ret));
+                    vTaskDelay(100);
                     // ESP_LOGI(TAG, "Wifi configurate with success ! SSID: %s, Password: %s", ); //ajouter les config wifi
+                    next_wifi_state_id = WIFI_STATE_CONNECT_FAILED;
+                    break;
 
             case WIFI_STATE_CONNECT_FAILED:  
 

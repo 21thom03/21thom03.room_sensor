@@ -41,6 +41,7 @@ void app_main(void)
 {
     esp_err_t ret;
 
+
     strncpy(wifi[1].ssid, "Livebox-FA70", 32);
     strncpy(wifi[1].password, "C1409D1206M1408T2103N2702", 64);
     strncpy(wifi[0].ssid, "Ouiii", 32);
