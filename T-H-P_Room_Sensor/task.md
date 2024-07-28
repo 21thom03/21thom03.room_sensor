@@ -6,11 +6,11 @@
 
 # Stage 2
 
-[ ] Wi-Fi connection
-[ ] Wi-Fi configuration
+[X] Wi-Fi connection
+[X] Wi-Fi configuration
 [ ] Led to significate Wi-Fi active
 [ ] Led blink for Wi-Fi connection
-[ ] ThingsBoard connection
+[ ] CLOUD connection
 
 # Stage 3
 
