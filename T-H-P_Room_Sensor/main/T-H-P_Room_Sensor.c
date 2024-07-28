@@ -58,7 +58,9 @@ void app_main(void)
 	ESP_ERROR_CHECK(ret);
 
     vTaskDelay(10);
-	xTaskCreate(task_network, "task-network", 10 * 1024, NULL, 7, NULL);
+	// xTaskCreate(task_network, "task-network", 10 * 1024, NULL, 7, NULL);
+
+    
     // for(int try_wifi = 0; (try_wifi < WIFI_NUMBER) && (ret != ESP_OK); try_wifi ++)
     // {
     //     ret = wifi_init_sta(wifi[try_wifi]);
