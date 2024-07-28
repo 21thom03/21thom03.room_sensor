@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "T-H-P_Room_Sensor",
-    "project_version":    "176ba8f-dirty",
+    "project_version":    "3706bde-dirty",
     "project_path":       "/Users/thom/Documents/GitHub/21thom03.room_sensor/T-H-P_Room_Sensor",
     "idf_path":           "/Users/thom/Documents/esp-idf/v4.4/esp-idf",
     "build_dir":          "/Users/thom/Documents/GitHub/21thom03.room_sensor/T-H-P_Room_Sensor/build",
@@ -873,12 +873,12 @@
             "dir": "/Users/thom/Documents/GitHub/21thom03.room_sensor/T-H-P_Room_Sensor/main",
             "type": "LIBRARY",
             "lib": "__idf_main",
-            "reqs": [ "i2c_sensor", "BME280" ],
+            "reqs": [ "i2c_sensor", "BME280", "nvs_flash" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/Users/thom/Documents/GitHub/21thom03.room_sensor/T-H-P_Room_Sensor/build/esp-idf/main/libmain.a",
-            "sources": [ "/Users/thom/Documents/GitHub/21thom03.room_sensor/T-H-P_Room_Sensor/main/wifi_task.c", "/Users/thom/Documents/GitHub/21thom03.room_sensor/T-H-P_Room_Sensor/main/gpio_task.c", "/Users/thom/Documents/GitHub/21thom03.room_sensor/T-H-P_Room_Sensor/main/T-H-P_Room_Sensor.c" ],
+            "sources": [ "/Users/thom/Documents/GitHub/21thom03.room_sensor/T-H-P_Room_Sensor/main/gpio_task.c", "/Users/thom/Documents/GitHub/21thom03.room_sensor/T-H-P_Room_Sensor/main/T-H-P_Room_Sensor.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {

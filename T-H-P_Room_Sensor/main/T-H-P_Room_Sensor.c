@@ -35,7 +35,7 @@ BME280_config_t BME280_sensor_conf = {
 esp_err_t wifi_init_sta(wifi_id_t wifi);
 esp_err_t wifi_disconnect(void);
 void task_network(void* pvParameter);
-
+void task_gpio(void* pvParameter);
 
 void app_main(void)
 {
@@ -58,7 +58,14 @@ void app_main(void)
 	ESP_ERROR_CHECK(ret);
 
     vTaskDelay(10);
-	// xTaskCreate(task_network, "task-network", 10 * 1024, NULL, 7, NULL);
+	xTaskCreate(task_gpio, "GPIO-task", 10*1024, NULL, 7, NULL);
+
+    vTaskDelay(100);
+    GPIO_var = GPIO_OFF;
+    vTaskDelay(1000);
+    GPIO_var = GPIO_BLINK;
+    vTaskDelay(1000);
+    GPIO_var = GPIO_OFF;
 
     
     // for(int try_wifi = 0; (try_wifi < WIFI_NUMBER) && (ret != ESP_OK); try_wifi ++)
