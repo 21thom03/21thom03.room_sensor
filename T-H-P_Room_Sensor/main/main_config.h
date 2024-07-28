@@ -13,15 +13,16 @@
 #include "nvs_flash.h"
 #include "esp_system.h"
 #include "esp_event.h"
+#include "esp_wifi.h"
+#include "lwip/err.h"
+#include "lwip/sys.h"
 #include "esp_err.h"
 #include "esp_log.h"
 
 #include "esp_sntp.h"
-#include "lwip/err.h"
-#include "lwip/sys.h"
 #include "driver/i2c.h"
 #include "driver/gpio.h"
-#include "esp_wifi.h"
+
 
 #include "i2c_sensor.h" 
 #include "BME280.h"

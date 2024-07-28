@@ -4,7 +4,7 @@
 /**********************************
  * Class and structur declaration
 ***********************************/
-wifi_id_t wifi[3];
+wifi_id_t wifi[WIFI_NUMBER];
 
 i2c_sensor_t BME280_sensor = {
     .port = I2C_PORT,
@@ -45,7 +45,7 @@ void app_main(void)
     strncpy(wifi[1].ssid, "Livebox-FA70", 32);
     strncpy(wifi[1].password, "C1409D1206M1408T2103N2702", 64);
     strncpy(wifi[0].ssid, "Ouiii", 32);
-    strncpy(wifi[0].password, "Zbeubzbeub", 64);
+    strncpy(wifi[0].password, "Zbeubzbeub2103", 64);
     strncpy(wifi[2].ssid, "ALIGUEST", 32);
 	strncpy(wifi[2].password, "AZERTYUI", 64);
 

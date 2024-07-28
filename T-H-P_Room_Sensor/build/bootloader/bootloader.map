@@ -68,27 +68,27 @@ esp-idf/soc/libsoc.a(gpio_periph.c.obj)
                               esp-idf/bootloader_support/libbootloader_support.a(bootloader_common.c.obj) (GPIO_PIN_MUX_REG)
 esp-idf/spi_flash/libspi_flash.a(spi_flash_rom_patch.c.obj)
                               esp-idf/bootloader_support/libbootloader_support.a(bootloader_flash.c.obj) (esp_rom_spiflash_wait_idle)
-c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_bswapsi2.o)
+/Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_bswapsi2.o)
                               esp-idf/bootloader_support/libbootloader_support.a(bootloader_sha.c.obj) (__bswapsi2)
-c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_divdi3.o)
+/Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_divdi3.o)
                               esp-idf/bootloader_support/libbootloader_support.a(bootloader_init.c.obj) (__divdi3)
-c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_udivdi3.o)
+/Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_udivdi3.o)
                               esp-idf/bootloader_support/libbootloader_support.a(bootloader_init.c.obj) (__udivdi3)
-c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-impure.o)
+/Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-impure.o)
                               esp-idf/main/libmain.a(bootloader_start.c.obj) (_global_impure_ptr)
-c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcmp.o)
+/Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcmp.o)
                               esp-idf/bootloader_support/libbootloader_support.a(bootloader_common.c.obj) (memcmp)
-c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcpy.o)
+/Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcpy.o)
                               esp-idf/bootloader_support/libbootloader_support.a(bootloader_common.c.obj) (memcpy)
-c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memset.o)
+/Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memset.o)
                               esp-idf/main/libmain.a(bootloader_start.c.obj) (memset)
-c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strcspn.o)
+/Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strcspn.o)
                               esp-idf/bootloader_support/libbootloader_support.a(bootloader_common.c.obj) (strcspn)
-c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strlen.o)
+/Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strlen.o)
                               esp-idf/bootloader_support/libbootloader_support.a(bootloader_common.c.obj) (strlen)
-c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strncpy.o)
+/Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strncpy.o)
                               esp-idf/bootloader_support/libbootloader_support.a(bootloader_common.c.obj) (strncpy)
-c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strstr.o)
+/Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strstr.o)
                               esp-idf/bootloader_support/libbootloader_support.a(bootloader_common.c.obj) (strstr)
 
 Allocating common symbols
@@ -99,30 +99,30 @@ bootloader_image_hdr
 
 Discarded input sections
 
- .literal       0x0000000000000000        0x4 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
- .text          0x0000000000000000        0x6 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
- .data          0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
- .bss           0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
- .debug_line    0x0000000000000000       0xa1 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
- .debug_info    0x0000000000000000       0x26 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
- .debug_abbrev  0x0000000000000000       0x14 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
+ .literal       0x0000000000000000        0x4 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
+ .text          0x0000000000000000        0x6 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
+ .data          0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
+ .bss           0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
+ .debug_line    0x0000000000000000       0xb4 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
+ .debug_info    0x0000000000000000       0x26 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
+ .debug_abbrev  0x0000000000000000       0x14 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
  .debug_aranges
-                0x0000000000000000       0x20 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
- .debug_str     0x0000000000000000       0xfc c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
- .text          0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crti.o
- .data          0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crti.o
- .bss           0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crti.o
- .literal       0x0000000000000000       0x44 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
- .fini.literal  0x0000000000000000        0x4 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
- .init.literal  0x0000000000000000        0x4 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
- .text          0x0000000000000000       0xa6 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
- .data          0x0000000000000000        0x4 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
- .bss           0x0000000000000000       0x20 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
- .eh_frame      0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+                0x0000000000000000       0x20 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
+ .debug_str     0x0000000000000000      0x122 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
+ .text          0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crti.o
+ .data          0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crti.o
+ .bss           0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crti.o
+ .literal       0x0000000000000000       0x44 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+ .fini.literal  0x0000000000000000        0x4 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+ .init.literal  0x0000000000000000        0x4 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+ .text          0x0000000000000000       0xa6 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+ .data          0x0000000000000000        0x4 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+ .bss           0x0000000000000000       0x20 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+ .eh_frame      0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
  .tm_clone_table
-                0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
- .fini          0x0000000000000000        0x6 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
- .init          0x0000000000000000        0x6 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+                0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+ .fini          0x0000000000000000        0x6 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+ .init          0x0000000000000000        0x6 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
  .text          0x0000000000000000        0x0 CMakeFiles/bootloader.elf.dir/project_elf_src_esp32.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/bootloader.elf.dir/project_elf_src_esp32.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/bootloader.elf.dir/project_elf_src_esp32.c.obj
@@ -456,8 +456,8 @@ Discarded input sections
  .debug_aranges
                 0x0000000000000000       0x40 esp-idf/hal/libhal.a(cpu_hal.c.obj)
  .debug_ranges  0x0000000000000000       0xa8 esp-idf/hal/libhal.a(cpu_hal.c.obj)
- .debug_line    0x0000000000000000      0x7ef esp-idf/hal/libhal.a(cpu_hal.c.obj)
- .debug_str     0x0000000000000000     0x12e8 esp-idf/hal/libhal.a(cpu_hal.c.obj)
+ .debug_line    0x0000000000000000      0x82f esp-idf/hal/libhal.a(cpu_hal.c.obj)
+ .debug_str     0x0000000000000000     0x12e5 esp-idf/hal/libhal.a(cpu_hal.c.obj)
  .comment       0x0000000000000000       0x2d esp-idf/hal/libhal.a(cpu_hal.c.obj)
  .text          0x0000000000000000        0x0 esp-idf/hal/libhal.a(efuse_hal.c.obj)
  .data          0x0000000000000000        0x0 esp-idf/hal/libhal.a(efuse_hal.c.obj)
@@ -477,8 +477,8 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x1e0 esp-idf/soc/libsoc.a(gpio_periph.c.obj)
  .debug_aranges
                 0x0000000000000000       0x18 esp-idf/soc/libsoc.a(gpio_periph.c.obj)
- .debug_line    0x0000000000000000      0x382 esp-idf/soc/libsoc.a(gpio_periph.c.obj)
- .debug_str     0x0000000000000000      0x90d esp-idf/soc/libsoc.a(gpio_periph.c.obj)
+ .debug_line    0x0000000000000000      0x3be esp-idf/soc/libsoc.a(gpio_periph.c.obj)
+ .debug_str     0x0000000000000000      0x90a esp-idf/soc/libsoc.a(gpio_periph.c.obj)
  .comment       0x0000000000000000       0x2d esp-idf/soc/libsoc.a(gpio_periph.c.obj)
  .literal.esp_rom_spiflash_read_statushigh
                 0x0000000000000000        0xc esp-idf/spi_flash/libspi_flash.a(spi_flash_rom_patch.c.obj)
@@ -519,147 +519,147 @@ Discarded input sections
                 0x0000000000000000       0x94 esp-idf/spi_flash/libspi_flash.a(spi_flash_rom_patch.c.obj)
  .text.esp_rom_spiflash_write_disable
                 0x0000000000000000       0x18 esp-idf/spi_flash/libspi_flash.a(spi_flash_rom_patch.c.obj)
- .literal       0x0000000000000000        0x8 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_bswapsi2.o)
- .text          0x0000000000000000       0x26 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_bswapsi2.o)
- .data          0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_bswapsi2.o)
- .bss           0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_bswapsi2.o)
- .debug_frame   0x0000000000000000       0x28 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_bswapsi2.o)
- .debug_info    0x0000000000000000      0xb01 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_bswapsi2.o)
- .debug_abbrev  0x0000000000000000      0x1b1 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_bswapsi2.o)
- .debug_loc     0x0000000000000000       0x25 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_bswapsi2.o)
+ .literal       0x0000000000000000        0x8 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_bswapsi2.o)
+ .text          0x0000000000000000       0x26 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_bswapsi2.o)
+ .data          0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_bswapsi2.o)
+ .bss           0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_bswapsi2.o)
+ .debug_frame   0x0000000000000000       0x28 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_bswapsi2.o)
+ .debug_info    0x0000000000000000      0xb01 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_bswapsi2.o)
+ .debug_abbrev  0x0000000000000000      0x1b1 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_bswapsi2.o)
+ .debug_loc     0x0000000000000000       0x25 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_bswapsi2.o)
  .debug_aranges
-                0x0000000000000000       0x20 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_bswapsi2.o)
- .debug_line    0x0000000000000000      0x39d c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_bswapsi2.o)
- .debug_str     0x0000000000000000      0x712 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_bswapsi2.o)
- .comment       0x0000000000000000       0x2d c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_bswapsi2.o)
- .text          0x0000000000000000      0x2aa c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_divdi3.o)
- .data          0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_divdi3.o)
- .bss           0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_divdi3.o)
- .debug_frame   0x0000000000000000       0x28 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_divdi3.o)
- .eh_frame      0x0000000000000000       0x28 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_divdi3.o)
- .debug_info    0x0000000000000000     0x114a c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_divdi3.o)
- .debug_abbrev  0x0000000000000000      0x28e c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_divdi3.o)
- .debug_loc     0x0000000000000000      0xb09 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_divdi3.o)
+                0x0000000000000000       0x20 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_bswapsi2.o)
+ .debug_line    0x0000000000000000      0x3e4 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_bswapsi2.o)
+ .debug_str     0x0000000000000000      0x738 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_bswapsi2.o)
+ .comment       0x0000000000000000       0x2d /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_bswapsi2.o)
+ .text          0x0000000000000000      0x2aa /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_divdi3.o)
+ .data          0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_divdi3.o)
+ .bss           0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_divdi3.o)
+ .debug_frame   0x0000000000000000       0x28 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_divdi3.o)
+ .eh_frame      0x0000000000000000       0x28 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_divdi3.o)
+ .debug_info    0x0000000000000000     0x114a /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_divdi3.o)
+ .debug_abbrev  0x0000000000000000      0x28e /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_divdi3.o)
+ .debug_loc     0x0000000000000000      0xb09 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_divdi3.o)
  .debug_aranges
-                0x0000000000000000       0x20 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_divdi3.o)
- .debug_ranges  0x0000000000000000       0xa0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_divdi3.o)
- .debug_line    0x0000000000000000      0xb97 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_divdi3.o)
- .debug_str     0x0000000000000000      0x78b c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_divdi3.o)
- .comment       0x0000000000000000       0x2d c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_divdi3.o)
- .text          0x0000000000000000      0x26e c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_udivdi3.o)
- .data          0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_udivdi3.o)
- .bss           0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_udivdi3.o)
- .debug_frame   0x0000000000000000       0x28 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_udivdi3.o)
- .eh_frame      0x0000000000000000       0x28 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_udivdi3.o)
- .debug_info    0x0000000000000000     0x10fc c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_udivdi3.o)
- .debug_abbrev  0x0000000000000000      0x27a c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_udivdi3.o)
- .debug_loc     0x0000000000000000      0xa8a c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_udivdi3.o)
+                0x0000000000000000       0x20 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_divdi3.o)
+ .debug_ranges  0x0000000000000000       0xa0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_divdi3.o)
+ .debug_line    0x0000000000000000      0xbde /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_divdi3.o)
+ .debug_str     0x0000000000000000      0x7b1 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_divdi3.o)
+ .comment       0x0000000000000000       0x2d /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_divdi3.o)
+ .text          0x0000000000000000      0x26e /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_udivdi3.o)
+ .data          0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_udivdi3.o)
+ .bss           0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_udivdi3.o)
+ .debug_frame   0x0000000000000000       0x28 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_udivdi3.o)
+ .eh_frame      0x0000000000000000       0x28 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_udivdi3.o)
+ .debug_info    0x0000000000000000     0x10fc /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_udivdi3.o)
+ .debug_abbrev  0x0000000000000000      0x27a /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_udivdi3.o)
+ .debug_loc     0x0000000000000000      0xa8a /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_udivdi3.o)
  .debug_aranges
-                0x0000000000000000       0x20 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_udivdi3.o)
- .debug_ranges  0x0000000000000000       0xa0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_udivdi3.o)
- .debug_line    0x0000000000000000      0xaee c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_udivdi3.o)
- .debug_str     0x0000000000000000      0x78c c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_udivdi3.o)
- .comment       0x0000000000000000       0x2d c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_udivdi3.o)
- .text          0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-impure.o)
- .data          0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-impure.o)
- .bss           0x0000000000000000        0x4 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-impure.o)
- .debug_info    0x0000000000000000      0x915 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-impure.o)
- .debug_abbrev  0x0000000000000000      0x169 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-impure.o)
+                0x0000000000000000       0x20 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_udivdi3.o)
+ .debug_ranges  0x0000000000000000       0xa0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_udivdi3.o)
+ .debug_line    0x0000000000000000      0xb35 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_udivdi3.o)
+ .debug_str     0x0000000000000000      0x7b2 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_udivdi3.o)
+ .comment       0x0000000000000000       0x2d /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_udivdi3.o)
+ .text          0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x4 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-impure.o)
+ .debug_info    0x0000000000000000      0x915 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-impure.o)
+ .debug_abbrev  0x0000000000000000      0x169 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-impure.o)
  .debug_aranges
-                0x0000000000000000       0x18 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-impure.o)
- .debug_line    0x0000000000000000      0x131 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-impure.o)
- .debug_str     0x0000000000000000      0x5cc c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-impure.o)
- .comment       0x0000000000000000       0x2d c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-impure.o)
- .text          0x0000000000000000       0x52 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcmp.o)
- .data          0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcmp.o)
- .bss           0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcmp.o)
- .debug_frame   0x0000000000000000       0x28 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcmp.o)
- .debug_info    0x0000000000000000      0x9ca c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcmp.o)
- .debug_abbrev  0x0000000000000000      0x1af c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcmp.o)
- .debug_loc     0x0000000000000000      0x17f c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcmp.o)
+                0x0000000000000000       0x18 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-impure.o)
+ .debug_line    0x0000000000000000      0x157 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-impure.o)
+ .debug_str     0x0000000000000000      0x5f2 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-impure.o)
+ .comment       0x0000000000000000       0x2d /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-impure.o)
+ .text          0x0000000000000000       0x52 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcmp.o)
+ .data          0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcmp.o)
+ .bss           0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcmp.o)
+ .debug_frame   0x0000000000000000       0x28 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcmp.o)
+ .debug_info    0x0000000000000000      0x9ca /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcmp.o)
+ .debug_abbrev  0x0000000000000000      0x1af /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcmp.o)
+ .debug_loc     0x0000000000000000      0x17f /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcmp.o)
  .debug_aranges
-                0x0000000000000000       0x20 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcmp.o)
- .debug_line    0x0000000000000000      0x347 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcmp.o)
- .debug_str     0x0000000000000000      0x5dc c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcmp.o)
- .comment       0x0000000000000000       0x2d c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcmp.o)
- .literal       0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcpy.o)
- .text          0x0000000000000000      0x135 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcpy.o)
- .data          0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcpy.o)
- .bss           0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcpy.o)
- .debug_line    0x0000000000000000      0x36d c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcpy.o)
- .debug_info    0x0000000000000000       0x26 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcpy.o)
- .debug_abbrev  0x0000000000000000       0x14 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcpy.o)
+                0x0000000000000000       0x20 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcmp.o)
+ .debug_line    0x0000000000000000      0x393 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcmp.o)
+ .debug_str     0x0000000000000000      0x602 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcmp.o)
+ .comment       0x0000000000000000       0x2d /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcmp.o)
+ .literal       0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcpy.o)
+ .text          0x0000000000000000      0x135 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcpy.o)
+ .data          0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcpy.o)
+ .bss           0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcpy.o)
+ .debug_line    0x0000000000000000      0x380 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcpy.o)
+ .debug_info    0x0000000000000000       0x26 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcpy.o)
+ .debug_abbrev  0x0000000000000000       0x14 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcpy.o)
  .debug_aranges
-                0x0000000000000000       0x20 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcpy.o)
- .debug_str     0x0000000000000000      0x114 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcpy.o)
- .literal       0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memset.o)
- .text          0x0000000000000000       0x74 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memset.o)
- .data          0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memset.o)
- .bss           0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memset.o)
- .debug_line    0x0000000000000000      0x1a4 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memset.o)
- .debug_info    0x0000000000000000       0x26 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memset.o)
- .debug_abbrev  0x0000000000000000       0x14 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memset.o)
+                0x0000000000000000       0x20 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcpy.o)
+ .debug_str     0x0000000000000000      0x13a /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcpy.o)
+ .literal       0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memset.o)
+ .text          0x0000000000000000       0x74 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memset.o)
+ .debug_line    0x0000000000000000      0x1b7 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memset.o)
+ .debug_info    0x0000000000000000       0x26 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memset.o)
+ .debug_abbrev  0x0000000000000000       0x14 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memset.o)
  .debug_aranges
-                0x0000000000000000       0x20 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memset.o)
- .debug_str     0x0000000000000000      0x114 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memset.o)
- .text          0x0000000000000000       0x2b c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strcspn.o)
- .data          0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strcspn.o)
- .bss           0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strcspn.o)
- .debug_frame   0x0000000000000000       0x28 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strcspn.o)
- .debug_info    0x0000000000000000      0x979 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strcspn.o)
- .debug_abbrev  0x0000000000000000      0x1b9 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strcspn.o)
- .debug_loc     0x0000000000000000       0x83 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strcspn.o)
+                0x0000000000000000       0x20 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memset.o)
+ .debug_str     0x0000000000000000      0x13a /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memset.o)
+ .text          0x0000000000000000       0x2b /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strcspn.o)
+ .data          0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strcspn.o)
+ .bss           0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strcspn.o)
+ .debug_frame   0x0000000000000000       0x28 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strcspn.o)
+ .debug_info    0x0000000000000000      0x979 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strcspn.o)
+ .debug_abbrev  0x0000000000000000      0x1b9 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strcspn.o)
+ .debug_loc     0x0000000000000000       0x83 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strcspn.o)
  .debug_aranges
-                0x0000000000000000       0x20 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strcspn.o)
- .debug_line    0x0000000000000000      0x2fa c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strcspn.o)
- .debug_str     0x0000000000000000      0x5de c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strcspn.o)
- .comment       0x0000000000000000       0x2d c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strcspn.o)
- .literal       0x0000000000000000        0xc c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strlen.o)
- .text          0x0000000000000000       0x63 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strlen.o)
- .data          0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strlen.o)
- .bss           0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strlen.o)
- .debug_line    0x0000000000000000      0x180 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strlen.o)
- .debug_info    0x0000000000000000       0x26 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strlen.o)
- .debug_abbrev  0x0000000000000000       0x14 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strlen.o)
+                0x0000000000000000       0x20 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strcspn.o)
+ .debug_line    0x0000000000000000      0x346 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strcspn.o)
+ .debug_str     0x0000000000000000      0x604 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strcspn.o)
+ .comment       0x0000000000000000       0x2d /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strcspn.o)
+ .literal       0x0000000000000000        0xc /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strlen.o)
+ .text          0x0000000000000000       0x63 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strlen.o)
+ .data          0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strlen.o)
+ .bss           0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strlen.o)
+ .debug_line    0x0000000000000000      0x193 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strlen.o)
+ .debug_info    0x0000000000000000       0x26 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strlen.o)
+ .debug_abbrev  0x0000000000000000       0x14 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strlen.o)
  .debug_aranges
-                0x0000000000000000       0x20 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strlen.o)
- .debug_str     0x0000000000000000      0x114 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strlen.o)
- .literal       0x0000000000000000        0xc c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strncpy.o)
- .text          0x0000000000000000      0x113 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strncpy.o)
- .data          0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strncpy.o)
- .bss           0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strncpy.o)
- .debug_line    0x0000000000000000      0x307 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strncpy.o)
- .debug_info    0x0000000000000000       0x26 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strncpy.o)
- .debug_abbrev  0x0000000000000000       0x14 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strncpy.o)
+                0x0000000000000000       0x20 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strlen.o)
+ .debug_str     0x0000000000000000      0x13a /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strlen.o)
+ .literal       0x0000000000000000        0xc /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strncpy.o)
+ .text          0x0000000000000000      0x113 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strncpy.o)
+ .data          0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strncpy.o)
+ .bss           0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strncpy.o)
+ .debug_line    0x0000000000000000      0x31a /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strncpy.o)
+ .debug_info    0x0000000000000000       0x26 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strncpy.o)
+ .debug_abbrev  0x0000000000000000       0x14 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strncpy.o)
  .debug_aranges
-                0x0000000000000000       0x20 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strncpy.o)
- .debug_str     0x0000000000000000      0x115 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strncpy.o)
- .text          0x0000000000000000       0x36 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strstr.o)
- .data          0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strstr.o)
- .bss           0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strstr.o)
- .debug_frame   0x0000000000000000       0x28 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strstr.o)
- .debug_info    0x0000000000000000      0x979 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strstr.o)
- .debug_abbrev  0x0000000000000000      0x1b9 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strstr.o)
- .debug_loc     0x0000000000000000       0x44 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strstr.o)
+                0x0000000000000000       0x20 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strncpy.o)
+ .debug_str     0x0000000000000000      0x13b /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strncpy.o)
+ .text          0x0000000000000000       0x36 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strstr.o)
+ .data          0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strstr.o)
+ .bss           0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strstr.o)
+ .debug_frame   0x0000000000000000       0x28 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strstr.o)
+ .debug_info    0x0000000000000000      0x979 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strstr.o)
+ .debug_abbrev  0x0000000000000000      0x1b9 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strstr.o)
+ .debug_loc     0x0000000000000000       0x44 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strstr.o)
  .debug_aranges
-                0x0000000000000000       0x20 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strstr.o)
- .debug_line    0x0000000000000000      0x318 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strstr.o)
- .debug_str     0x0000000000000000      0x5dc c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strstr.o)
- .comment       0x0000000000000000       0x2d c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strstr.o)
- .literal       0x0000000000000000        0x4 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
- .init.literal  0x0000000000000000        0x4 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
- .text          0x0000000000000000       0x16 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
- .data          0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
- .bss           0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
- .eh_frame      0x0000000000000000        0x4 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
+                0x0000000000000000       0x20 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strstr.o)
+ .debug_line    0x0000000000000000      0x364 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strstr.o)
+ .debug_str     0x0000000000000000      0x602 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strstr.o)
+ .comment       0x0000000000000000       0x2d /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strstr.o)
+ .literal       0x0000000000000000        0x4 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
+ .init.literal  0x0000000000000000        0x4 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
+ .text          0x0000000000000000       0x16 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
+ .data          0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
+ .bss           0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
+ .eh_frame      0x0000000000000000        0x4 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
  .tm_clone_table
-                0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
- .init          0x0000000000000000        0x6 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
- .text          0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtn.o
- .data          0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtn.o
- .bss           0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtn.o
- .init          0x0000000000000000        0x2 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtn.o
- .fini          0x0000000000000000        0x2 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtn.o
+                0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
+ .init          0x0000000000000000        0x6 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
+ .text          0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtn.o
+ .data          0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtn.o
+ .bss           0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtn.o
+ .init          0x0000000000000000        0x2 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtn.o
+ .fini          0x0000000000000000        0x2 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtn.o
 
 Memory Configuration
 
@@ -671,9 +671,9 @@ dram_seg         0x000000003fff0000 0x0000000000010000 rw
 
 Linker script and memory map
 
-LOAD c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
-LOAD c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crti.o
-LOAD c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+LOAD /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
+LOAD /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crti.o
+LOAD /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
 LOAD CMakeFiles/bootloader.elf.dir/project_elf_src_esp32.c.obj
 LOAD esp-idf/hal/libhal.a
 LOAD esp-idf/soc/libsoc.a
@@ -736,14 +736,14 @@ LOAD esp-idf/xtensa/libxtensa.a
 LOAD esp-idf/esp_common/libesp_common.a
 LOAD esp-idf/esp_rom/libesp_rom.a
 LOAD esp-idf/log/liblog.a
-LOAD C:/Users/thomas.dacosta/esp/v4.4/esp-idf/components/xtensa/esp32/libxt_hal.a
-LOAD c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a
-LOAD c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a
-LOAD c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libnosys.a
-LOAD c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a
-LOAD c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a
-LOAD c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
-LOAD c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtn.o
+LOAD /Users/thom/Documents/esp-idf/v4.4/esp-idf/components/xtensa/esp32/libxt_hal.a
+LOAD /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a
+LOAD /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a
+LOAD /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libnosys.a
+LOAD /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a
+LOAD /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a
+LOAD /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
+LOAD /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtn.o
                 0x000000003ff40000                PROVIDE (UART0 = 0x3ff40000)
                 0x000000003ff42000                PROVIDE (SPI1 = 0x3ff42000)
                 [!provide]                        PROVIDE (SPI0 = 0x3ff43000)
@@ -2902,8 +2902,8 @@ LOAD c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/b
  *fill*         0x0000000040078e3e        0x2 
  .text.esp_log_early_timestamp
                 0x0000000040078e40       0x1f esp-idf/log/liblog.a(log_noos.c.obj)
-                0x0000000040078e40                esp_log_early_timestamp
                 0x0000000040078e40                esp_log_timestamp
+                0x0000000040078e40                esp_log_early_timestamp
  *libgcc.a:(.literal .text .literal.* .text.*)
  *libbootloader_support.a:bootloader_clock_loader.*(.literal .text .literal.* .text.*)
  *libbootloader_support.a:bootloader_common_loader.*(.literal .text .literal.* .text.*)
@@ -3254,8 +3254,8 @@ LOAD c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/b
                 0x000000004007b3e0                rtc_clk_bbpll_configure
  .text.rtc_clk_xtal_freq_get
                 0x000000004007b560       0x26 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_clk.c.obj)
-                0x000000004007b560                rtc_clk_xtal_freq_get
                 0x000000004007b560                rtc_get_xtal
+                0x000000004007b560                rtc_clk_xtal_freq_get
  *fill*         0x000000004007b586        0x2 
  .text.rtc_clk_cpu_freq_mhz_to_config
                 0x000000004007b588       0x57 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_clk.c.obj)
@@ -3320,7 +3320,7 @@ LOAD c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/b
  *(.fini.literal)
  *(.fini)
  *fill*         0x000000004007bac5        0x3 
- .fini          0x000000004007bac8        0x3 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crti.o
+ .fini          0x000000004007bac8        0x3 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crti.o
                 0x000000004007bac8                _fini
  *(.gnu.version)
                 0x000000004007bacb                _loader_text_end = ABSOLUTE (.)
@@ -3330,7 +3330,7 @@ LOAD c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/b
  *(.entry.text)
  *(.init.literal)
  *(.init)
- .init          0x0000000040080400        0x3 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crti.o
+ .init          0x0000000040080400        0x3 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crti.o
                 0x0000000040080400                _init
                 0x0000000040080403                _stext = .
                 0x0000000040080403                _text_start = ABSOLUTE (.)
@@ -3558,7 +3558,7 @@ LOAD c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/b
  *(.jcr)
                 0x000000003fff0034                _data_end = ABSOLUTE (.)
 
-.dram0.rodata   0x000000003fff0034     0x1a0c
+.dram0.rodata   0x000000003fff0034     0x1a04
                 0x000000003fff0034                _rodata_start = ABSOLUTE (.)
  *(.rodata)
  .rodata        0x000000003fff0034        0x8 esp-idf/bootloader_support/libbootloader_support.a(bootloader_clock_init.c.obj)
@@ -3649,68 +3649,68 @@ LOAD c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/b
  .rodata.bootloader_enable_random.str1.1
                 0x000000003fff1639       0x3c esp-idf/bootloader_support/libbootloader_support.a(bootloader_init.c.obj)
  .rodata.bootloader_print_banner.str1.1
-                0x000000003fff1675       0xad esp-idf/bootloader_support/libbootloader_support.a(bootloader_init.c.obj)
+                0x000000003fff1675       0xa5 esp-idf/bootloader_support/libbootloader_support.a(bootloader_init.c.obj)
  .rodata.rtc_clk_cpu_freq_to_pll_mhz.str1.1
-                0x000000003fff1722       0x31 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_clk.c.obj)
+                0x000000003fff171a       0x31 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_clk.c.obj)
  .rodata.rtc_clk_cpu_freq_get_config.str1.1
-                0x000000003fff1753       0x3b esp-idf/esp_hw_support/libesp_hw_support.a(rtc_clk.c.obj)
+                0x000000003fff174b       0x3b esp-idf/esp_hw_support/libesp_hw_support.a(rtc_clk.c.obj)
  .rodata.rtc_clk_xtal_freq_estimate.str1.1
-                0x000000003fff178e       0xe3 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_clk_init.c.obj)
+                0x000000003fff1786       0xe3 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_clk_init.c.obj)
  .rodata.rtc_clk_init.str1.1
-                0x000000003fff1871       0xd9 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_clk_init.c.obj)
+                0x000000003fff1869       0xd9 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_clk_init.c.obj)
  .rodata.rtc_clk_cal_internal.str1.1
-                0x000000003fff194a       0x9e esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
+                0x000000003fff1942       0x9e esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
  .rodata.rtc_clk_wait_for_slow_cycle.str1.1
-                0x000000003fff19e8       0x33 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
+                0x000000003fff19e0       0x33 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
  .rodata.__func__$4090
-                0x000000003fff1a1b       0x15 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
+                0x000000003fff1a13       0x15 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
  *(.gnu.linkonce.r.*)
  *(.rodata1)
  *(.sdata2 .sdata2.*)
-                0x000000003fff1a30                __XT_EXCEPTION_TABLE_ = ABSOLUTE (.)
+                0x000000003fff1a28                __XT_EXCEPTION_TABLE_ = ABSOLUTE (.)
  *(.xt_except_table)
  *(.gcc_except_table)
  *(.gnu.linkonce.e.*)
  *(.gnu.version_r)
  *(.eh_frame)
-                0x000000003fff1a30                . = ((. + 0x3) & 0xfffffffffffffffc)
-                0x000000003fff1a30                __init_array_start = ABSOLUTE (.)
+                0x000000003fff1a28                . = ((. + 0x3) & 0xfffffffffffffffc)
+                0x000000003fff1a28                __init_array_start = ABSOLUTE (.)
  *crtbegin.*(.ctors)
- .ctors         0x000000003fff1a30        0x4 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+ .ctors         0x000000003fff1a28        0x4 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
  *(EXCLUDE_FILE(*crtend.*) .ctors)
  *(SORT_BY_NAME(.ctors.*))
  *(.ctors)
- .ctors         0x000000003fff1a34        0x4 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
-                0x000000003fff1a38                __init_array_end = ABSOLUTE (.)
+ .ctors         0x000000003fff1a2c        0x4 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
+                0x000000003fff1a30                __init_array_end = ABSOLUTE (.)
  *crtbegin.*(.dtors)
- .dtors         0x000000003fff1a38        0x4 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+ .dtors         0x000000003fff1a30        0x4 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
  *(EXCLUDE_FILE(*crtend.*) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
- .dtors         0x000000003fff1a3c        0x4 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
-                0x000000003fff1a3c                __DTOR_END__
-                0x000000003fff1a40                __XT_EXCEPTION_DESCS_ = ABSOLUTE (.)
+ .dtors         0x000000003fff1a34        0x4 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
+                0x000000003fff1a34                __DTOR_END__
+                0x000000003fff1a38                __XT_EXCEPTION_DESCS_ = ABSOLUTE (.)
  *(.xt_except_desc)
  *(.gnu.linkonce.h.*)
-                0x000000003fff1a40                __XT_EXCEPTION_DESCS_END__ = ABSOLUTE (.)
+                0x000000003fff1a38                __XT_EXCEPTION_DESCS_END__ = ABSOLUTE (.)
  *(.xt_except_desc_end)
  *(.dynamic)
  *(.gnu.version_d)
-                0x000000003fff1a40                _rodata_end = ABSOLUTE (.)
-                0x000000003fff1a40                _lit4_start = ABSOLUTE (.)
+                0x000000003fff1a38                _rodata_end = ABSOLUTE (.)
+                0x000000003fff1a38                _lit4_start = ABSOLUTE (.)
  *(*.lit4)
  *(.lit4.*)
  *(.gnu.linkonce.lit4.*)
-                0x000000003fff1a40                _lit4_end = ABSOLUTE (.)
-                0x000000003fff1a40                . = ALIGN (0x4)
-                0x000000003fff1a40                _dram_end = ABSOLUTE (.)
+                0x000000003fff1a38                _lit4_end = ABSOLUTE (.)
+                0x000000003fff1a38                . = ALIGN (0x4)
+                0x000000003fff1a38                _dram_end = ABSOLUTE (.)
 
 .xt.prop        0x0000000000000000     0x2e38
  *(.xt.prop .gnu.linkonce.prop.*)
- .xt.prop       0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
+ .xt.prop       0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
                                          0x24 (size before relaxing)
- .xt.prop       0x0000000000000000       0x30 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crti.o
- .xt.prop       0x0000000000000030       0x18 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+ .xt.prop       0x0000000000000000       0x30 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crti.o
+ .xt.prop       0x0000000000000030       0x18 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
                                         0x15c (size before relaxing)
  .xt.prop       0x0000000000000048       0x60 esp-idf/bootloader_support/libbootloader_support.a(bootloader_panic.c.obj)
  .xt.prop       0x00000000000000a8       0x6c esp-idf/main/libmain.a(bootloader_start.c.obj)
@@ -3768,36 +3768,36 @@ LOAD c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/b
                                          0x18 (size before relaxing)
  .xt.prop       0x0000000000002a0c      0x414 esp-idf/spi_flash/libspi_flash.a(spi_flash_rom_patch.c.obj)
                                         0x828 (size before relaxing)
- .xt.prop       0x0000000000002e20        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_bswapsi2.o)
+ .xt.prop       0x0000000000002e20        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_bswapsi2.o)
                                          0x30 (size before relaxing)
- .xt.prop       0x0000000000002e20        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_divdi3.o)
+ .xt.prop       0x0000000000002e20        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_divdi3.o)
                                         0x1bc (size before relaxing)
- .xt.prop       0x0000000000002e20        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_udivdi3.o)
+ .xt.prop       0x0000000000002e20        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_udivdi3.o)
                                         0x1a4 (size before relaxing)
- .xt.prop       0x0000000000002e20        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcmp.o)
+ .xt.prop       0x0000000000002e20        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcmp.o)
                                          0x84 (size before relaxing)
- .xt.prop       0x0000000000002e20        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcpy.o)
+ .xt.prop       0x0000000000002e20        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcpy.o)
                                         0x15c (size before relaxing)
- .xt.prop       0x0000000000002e20        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memset.o)
+ .xt.prop       0x0000000000002e20        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memset.o)
                                          0xd8 (size before relaxing)
- .xt.prop       0x0000000000002e20        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strcspn.o)
+ .xt.prop       0x0000000000002e20        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strcspn.o)
                                          0x90 (size before relaxing)
- .xt.prop       0x0000000000002e20        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strlen.o)
+ .xt.prop       0x0000000000002e20        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strlen.o)
                                          0xc0 (size before relaxing)
- .xt.prop       0x0000000000002e20        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strncpy.o)
+ .xt.prop       0x0000000000002e20        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strncpy.o)
                                         0x1a4 (size before relaxing)
- .xt.prop       0x0000000000002e20        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strstr.o)
+ .xt.prop       0x0000000000002e20        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strstr.o)
                                          0x78 (size before relaxing)
- .xt.prop       0x0000000000002e20       0x18 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
+ .xt.prop       0x0000000000002e20       0x18 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
                                          0x84 (size before relaxing)
- .xt.prop       0x0000000000002e38        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtn.o
+ .xt.prop       0x0000000000002e38        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtn.o
                                          0x30 (size before relaxing)
 
 .xt.lit         0x0000000000000000      0x2c8
  *(.xt.lit .gnu.linkonce.p.*)
- .xt.lit        0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
+ .xt.lit        0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
                                           0x8 (size before relaxing)
- .xt.lit        0x0000000000000000        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+ .xt.lit        0x0000000000000000        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
                                          0x18 (size before relaxing)
  .xt.lit        0x0000000000000000       0x10 esp-idf/bootloader_support/libbootloader_support.a(bootloader_panic.c.obj)
  .xt.lit        0x0000000000000010        0x8 esp-idf/main/libmain.a(bootloader_start.c.obj)
@@ -3851,13 +3851,13 @@ LOAD c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/b
                                          0x18 (size before relaxing)
  .xt.lit        0x0000000000000290       0x38 esp-idf/spi_flash/libspi_flash.a(spi_flash_rom_patch.c.obj)
                                          0x88 (size before relaxing)
- .xt.lit        0x00000000000002c8        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_bswapsi2.o)
+ .xt.lit        0x00000000000002c8        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_bswapsi2.o)
                                           0x8 (size before relaxing)
- .xt.lit        0x00000000000002c8        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strlen.o)
+ .xt.lit        0x00000000000002c8        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strlen.o)
                                           0x8 (size before relaxing)
- .xt.lit        0x00000000000002c8        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strncpy.o)
+ .xt.lit        0x00000000000002c8        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strncpy.o)
                                           0x8 (size before relaxing)
- .xt.lit        0x00000000000002c8        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
+ .xt.lit        0x00000000000002c8        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
                                          0x10 (size before relaxing)
                 0x0000000040008550                PROVIDE (ets_update_cpu_frequency = 0x40008550)
                 [!provide]                        PROVIDE (MD5Final = 0x4005db1c)
@@ -3869,9 +3869,9 @@ LOAD c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/b
 OUTPUT(bootloader.elf elf32-xtensa-le)
 
 .xtensa.info    0x0000000000000000       0x38
- .xtensa.info   0x0000000000000000       0x38 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
- .xtensa.info   0x0000000000000038        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crti.o
- .xtensa.info   0x0000000000000038        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+ .xtensa.info   0x0000000000000000       0x38 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
+ .xtensa.info   0x0000000000000038        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crti.o
+ .xtensa.info   0x0000000000000038        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
  .xtensa.info   0x0000000000000038        0x0 CMakeFiles/bootloader.elf.dir/project_elf_src_esp32.c.obj
  .xtensa.info   0x0000000000000038        0x0 esp-idf/bootloader_support/libbootloader_support.a(bootloader_panic.c.obj)
  .xtensa.info   0x0000000000000038        0x0 esp-idf/main/libmain.a(bootloader_start.c.obj)
@@ -3907,22 +3907,22 @@ OUTPUT(bootloader.elf elf32-xtensa-le)
  .xtensa.info   0x0000000000000038        0x0 esp-idf/hal/libhal.a(efuse_hal.c.obj)
  .xtensa.info   0x0000000000000038        0x0 esp-idf/soc/libsoc.a(gpio_periph.c.obj)
  .xtensa.info   0x0000000000000038        0x0 esp-idf/spi_flash/libspi_flash.a(spi_flash_rom_patch.c.obj)
- .xtensa.info   0x0000000000000038        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_bswapsi2.o)
- .xtensa.info   0x0000000000000038        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_divdi3.o)
- .xtensa.info   0x0000000000000038        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_udivdi3.o)
- .xtensa.info   0x0000000000000038        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-impure.o)
- .xtensa.info   0x0000000000000038        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcmp.o)
- .xtensa.info   0x0000000000000038        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcpy.o)
- .xtensa.info   0x0000000000000038        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memset.o)
- .xtensa.info   0x0000000000000038        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strcspn.o)
- .xtensa.info   0x0000000000000038        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strlen.o)
- .xtensa.info   0x0000000000000038        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strncpy.o)
- .xtensa.info   0x0000000000000038        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strstr.o)
- .xtensa.info   0x0000000000000038        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
- .xtensa.info   0x0000000000000038        0x0 c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtn.o
+ .xtensa.info   0x0000000000000038        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_bswapsi2.o)
+ .xtensa.info   0x0000000000000038        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_divdi3.o)
+ .xtensa.info   0x0000000000000038        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_udivdi3.o)
+ .xtensa.info   0x0000000000000038        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-impure.o)
+ .xtensa.info   0x0000000000000038        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcmp.o)
+ .xtensa.info   0x0000000000000038        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcpy.o)
+ .xtensa.info   0x0000000000000038        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memset.o)
+ .xtensa.info   0x0000000000000038        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strcspn.o)
+ .xtensa.info   0x0000000000000038        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strlen.o)
+ .xtensa.info   0x0000000000000038        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strncpy.o)
+ .xtensa.info   0x0000000000000038        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strstr.o)
+ .xtensa.info   0x0000000000000038        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
+ .xtensa.info   0x0000000000000038        0x0 /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtn.o
 
 .comment        0x0000000000000000       0x2c
- .comment       0x0000000000000000       0x2c c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+ .comment       0x0000000000000000       0x2c /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
                                          0x2d (size before relaxing)
  .comment       0x000000000000002c       0x2d esp-idf/bootloader_support/libbootloader_support.a(bootloader_panic.c.obj)
  .comment       0x000000000000002c       0x2d esp-idf/main/libmain.a(bootloader_start.c.obj)
@@ -3956,7 +3956,7 @@ OUTPUT(bootloader.elf elf32-xtensa-le)
  .comment       0x000000000000002c       0x2d esp-idf/hal/libhal.a(efuse_hal.c.obj)
  .comment       0x000000000000002c       0x2d esp-idf/hal/libhal.a(efuse_hal.c.obj)
  .comment       0x000000000000002c       0x2d esp-idf/spi_flash/libspi_flash.a(spi_flash_rom_patch.c.obj)
- .comment       0x000000000000002c       0x2d c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
+ .comment       0x000000000000002c       0x2d /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
 
 .debug_frame    0x0000000000000000     0x1370
  .debug_frame   0x0000000000000000       0x40 esp-idf/bootloader_support/libbootloader_support.a(bootloader_panic.c.obj)
@@ -4191,105 +4191,105 @@ OUTPUT(bootloader.elf elf32-xtensa-le)
  .debug_ranges  0x00000000000014f8       0x90 esp-idf/hal/libhal.a(efuse_hal.c.obj)
  .debug_ranges  0x0000000000001588       0xf0 esp-idf/spi_flash/libspi_flash.a(spi_flash_rom_patch.c.obj)
 
-.debug_line     0x0000000000000000    0x18fa1
- .debug_line    0x0000000000000000      0x5e1 esp-idf/bootloader_support/libbootloader_support.a(bootloader_panic.c.obj)
- .debug_line    0x00000000000005e1      0x729 esp-idf/main/libmain.a(bootloader_start.c.obj)
- .debug_line    0x0000000000000d0a     0x1151 esp-idf/bootloader_support/libbootloader_support.a(bootloader_common.c.obj)
- .debug_line    0x0000000000001e5b     0x1e7f esp-idf/bootloader_support/libbootloader_support.a(bootloader_flash.c.obj)
- .debug_line    0x0000000000003cda     0x22cc esp-idf/bootloader_support/libbootloader_support.a(bootloader_utility.c.obj)
- .debug_line    0x0000000000005fa6     0x2556 esp-idf/bootloader_support/libbootloader_support.a(esp_image_format.c.obj)
- .debug_line    0x00000000000084fc      0x857 esp-idf/bootloader_support/libbootloader_support.a(flash_partitions.c.obj)
- .debug_line    0x0000000000008d53      0x101 esp-idf/bootloader_support/libbootloader_support.a(bootloader_console_loader.c.obj)
- .debug_line    0x0000000000008e54      0x896 esp-idf/bootloader_support/libbootloader_support.a(bootloader_sha.c.obj)
- .debug_line    0x00000000000096ea       0xad esp-idf/bootloader_support/libbootloader_support.a(bootloader_soc.c.obj)
- .debug_line    0x0000000000009797     0x19f2 esp-idf/bootloader_support/libbootloader_support.a(bootloader_esp32.c.obj)
- .debug_line    0x000000000000b189      0xd84 esp-idf/bootloader_support/libbootloader_support.a(bootloader_common_loader.c.obj)
- .debug_line    0x000000000000bf0d      0x6d2 esp-idf/bootloader_support/libbootloader_support.a(bootloader_clock_init.c.obj)
- .debug_line    0x000000000000c5df      0x487 esp-idf/bootloader_support/libbootloader_support.a(bootloader_mem.c.obj)
- .debug_line    0x000000000000ca66      0x5e8 esp-idf/bootloader_support/libbootloader_support.a(bootloader_random.c.obj)
- .debug_line    0x000000000000d04e      0x834 esp-idf/bootloader_support/libbootloader_support.a(bootloader_random_esp32.c.obj)
- .debug_line    0x000000000000d882      0xbfb esp-idf/bootloader_support/libbootloader_support.a(bootloader_flash_config_esp32.c.obj)
- .debug_line    0x000000000000e47d      0x454 esp-idf/bootloader_support/libbootloader_support.a(bootloader_efuse.c.obj)
- .debug_line    0x000000000000e8d1      0xb35 esp-idf/bootloader_support/libbootloader_support.a(bootloader_init.c.obj)
- .debug_line    0x000000000000f406      0x5dd esp-idf/bootloader_support/libbootloader_support.a(bootloader_console.c.obj)
- .debug_line    0x000000000000f9e3      0x84d esp-idf/esp_hw_support/libesp_hw_support.a(cpu_util.c.obj)
- .debug_line    0x0000000000010230     0x1f84 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_clk.c.obj)
- .debug_line    0x00000000000121b4      0xbb7 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_clk_init.c.obj)
- .debug_line    0x0000000000012d6b      0xbc3 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_init.c.obj)
- .debug_line    0x000000000001392e      0xd12 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
- .debug_line    0x0000000000014640      0x5f1 esp-idf/esp_rom/libesp_rom.a(esp_rom_uart.c.obj)
- .debug_line    0x0000000000014c31      0x4e7 esp-idf/log/liblog.a(log_noos.c.obj)
- .debug_line    0x0000000000015118     0x1599 esp-idf/hal/libhal.a(wdt_hal_iram.c.obj)
- .debug_line    0x00000000000166b1      0x526 esp-idf/hal/libhal.a(mpu_hal.c.obj)
- .debug_line    0x0000000000016bd7      0x477 esp-idf/hal/libhal.a(efuse_hal.c.obj)
- .debug_line    0x000000000001704e      0x523 esp-idf/hal/libhal.a(efuse_hal.c.obj)
- .debug_line    0x0000000000017571     0x1a30 esp-idf/spi_flash/libspi_flash.a(spi_flash_rom_patch.c.obj)
+.debug_line     0x0000000000000000    0x197bb
+ .debug_line    0x0000000000000000      0x625 esp-idf/bootloader_support/libbootloader_support.a(bootloader_panic.c.obj)
+ .debug_line    0x0000000000000625      0x76d esp-idf/main/libmain.a(bootloader_start.c.obj)
+ .debug_line    0x0000000000000d92     0x119f esp-idf/bootloader_support/libbootloader_support.a(bootloader_common.c.obj)
+ .debug_line    0x0000000000001f31     0x1ecb esp-idf/bootloader_support/libbootloader_support.a(bootloader_flash.c.obj)
+ .debug_line    0x0000000000003dfc     0x231c esp-idf/bootloader_support/libbootloader_support.a(bootloader_utility.c.obj)
+ .debug_line    0x0000000000006118     0x25a8 esp-idf/bootloader_support/libbootloader_support.a(esp_image_format.c.obj)
+ .debug_line    0x00000000000086c0      0x899 esp-idf/bootloader_support/libbootloader_support.a(flash_partitions.c.obj)
+ .debug_line    0x0000000000008f59      0x105 esp-idf/bootloader_support/libbootloader_support.a(bootloader_console_loader.c.obj)
+ .debug_line    0x000000000000905e      0x8d6 esp-idf/bootloader_support/libbootloader_support.a(bootloader_sha.c.obj)
+ .debug_line    0x0000000000009934       0xaf esp-idf/bootloader_support/libbootloader_support.a(bootloader_soc.c.obj)
+ .debug_line    0x00000000000099e3     0x1a44 esp-idf/bootloader_support/libbootloader_support.a(bootloader_esp32.c.obj)
+ .debug_line    0x000000000000b427      0xdd2 esp-idf/bootloader_support/libbootloader_support.a(bootloader_common_loader.c.obj)
+ .debug_line    0x000000000000c1f9      0x716 esp-idf/bootloader_support/libbootloader_support.a(bootloader_clock_init.c.obj)
+ .debug_line    0x000000000000c90f      0x4c7 esp-idf/bootloader_support/libbootloader_support.a(bootloader_mem.c.obj)
+ .debug_line    0x000000000000cdd6      0x626 esp-idf/bootloader_support/libbootloader_support.a(bootloader_random.c.obj)
+ .debug_line    0x000000000000d3fc      0x878 esp-idf/bootloader_support/libbootloader_support.a(bootloader_random_esp32.c.obj)
+ .debug_line    0x000000000000dc74      0xc45 esp-idf/bootloader_support/libbootloader_support.a(bootloader_flash_config_esp32.c.obj)
+ .debug_line    0x000000000000e8b9      0x490 esp-idf/bootloader_support/libbootloader_support.a(bootloader_efuse.c.obj)
+ .debug_line    0x000000000000ed49      0xb85 esp-idf/bootloader_support/libbootloader_support.a(bootloader_init.c.obj)
+ .debug_line    0x000000000000f8ce      0x621 esp-idf/bootloader_support/libbootloader_support.a(bootloader_console.c.obj)
+ .debug_line    0x000000000000feef      0x893 esp-idf/esp_hw_support/libesp_hw_support.a(cpu_util.c.obj)
+ .debug_line    0x0000000000010782     0x1fce esp-idf/esp_hw_support/libesp_hw_support.a(rtc_clk.c.obj)
+ .debug_line    0x0000000000012750      0xbff esp-idf/esp_hw_support/libesp_hw_support.a(rtc_clk_init.c.obj)
+ .debug_line    0x000000000001334f      0xc05 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_init.c.obj)
+ .debug_line    0x0000000000013f54      0xd56 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
+ .debug_line    0x0000000000014caa      0x62f esp-idf/esp_rom/libesp_rom.a(esp_rom_uart.c.obj)
+ .debug_line    0x00000000000152d9      0x525 esp-idf/log/liblog.a(log_noos.c.obj)
+ .debug_line    0x00000000000157fe     0x15d9 esp-idf/hal/libhal.a(wdt_hal_iram.c.obj)
+ .debug_line    0x0000000000016dd7      0x566 esp-idf/hal/libhal.a(mpu_hal.c.obj)
+ .debug_line    0x000000000001733d      0x4b3 esp-idf/hal/libhal.a(efuse_hal.c.obj)
+ .debug_line    0x00000000000177f0      0x55d esp-idf/hal/libhal.a(efuse_hal.c.obj)
+ .debug_line    0x0000000000017d4d     0x1a6e esp-idf/spi_flash/libspi_flash.a(spi_flash_rom_patch.c.obj)
 
-.debug_str      0x0000000000000000     0xac33
- .debug_str     0x0000000000000000     0x11c1 esp-idf/bootloader_support/libbootloader_support.a(bootloader_panic.c.obj)
-                                       0x126e (size before relaxing)
- .debug_str     0x00000000000011c1      0x6c6 esp-idf/main/libmain.a(bootloader_start.c.obj)
-                                        0xd82 (size before relaxing)
- .debug_str     0x0000000000001887     0x2cad esp-idf/bootloader_support/libbootloader_support.a(bootloader_common.c.obj)
-                                       0x3a66 (size before relaxing)
- .debug_str     0x0000000000004534     0x1ab8 esp-idf/bootloader_support/libbootloader_support.a(bootloader_flash.c.obj)
-                                       0x3181 (size before relaxing)
- .debug_str     0x0000000000005fec      0x995 esp-idf/bootloader_support/libbootloader_support.a(bootloader_utility.c.obj)
-                                       0x4bbe (size before relaxing)
- .debug_str     0x0000000000006981      0x731 esp-idf/bootloader_support/libbootloader_support.a(esp_image_format.c.obj)
-                                       0x22c3 (size before relaxing)
- .debug_str     0x00000000000070b2       0xcd esp-idf/bootloader_support/libbootloader_support.a(flash_partitions.c.obj)
-                                        0x8b4 (size before relaxing)
- .debug_str     0x000000000000717f       0x7d esp-idf/bootloader_support/libbootloader_support.a(bootloader_console_loader.c.obj)
-                                        0x21c (size before relaxing)
- .debug_str     0x00000000000071fc      0x104 esp-idf/bootloader_support/libbootloader_support.a(bootloader_sha.c.obj)
-                                       0x12c6 (size before relaxing)
- .debug_str     0x0000000000007300       0x62 esp-idf/bootloader_support/libbootloader_support.a(bootloader_soc.c.obj)
-                                        0x1b4 (size before relaxing)
- .debug_str     0x0000000000007362      0x557 esp-idf/bootloader_support/libbootloader_support.a(bootloader_esp32.c.obj)
-                                       0x5d47 (size before relaxing)
- .debug_str     0x00000000000078b9      0x1f0 esp-idf/bootloader_support/libbootloader_support.a(bootloader_common_loader.c.obj)
-                                       0x36a0 (size before relaxing)
- .debug_str     0x0000000000007aa9      0x219 esp-idf/bootloader_support/libbootloader_support.a(bootloader_clock_init.c.obj)
-                                       0x37d0 (size before relaxing)
- .debug_str     0x0000000000007cc2       0x9a esp-idf/bootloader_support/libbootloader_support.a(bootloader_mem.c.obj)
-                                       0x11bb (size before relaxing)
- .debug_str     0x0000000000007d5c       0x83 esp-idf/bootloader_support/libbootloader_support.a(bootloader_random.c.obj)
-                                       0x11f9 (size before relaxing)
- .debug_str     0x0000000000007ddf      0xbf7 esp-idf/bootloader_support/libbootloader_support.a(bootloader_random_esp32.c.obj)
-                                       0x45ca (size before relaxing)
- .debug_str     0x00000000000089d6      0x108 esp-idf/bootloader_support/libbootloader_support.a(bootloader_flash_config_esp32.c.obj)
-                                        0xdeb (size before relaxing)
- .debug_str     0x0000000000008ade       0xb2 esp-idf/bootloader_support/libbootloader_support.a(bootloader_efuse.c.obj)
-                                        0x6dc (size before relaxing)
- .debug_str     0x0000000000008b90      0x2f4 esp-idf/bootloader_support/libbootloader_support.a(bootloader_init.c.obj)
-                                       0x4526 (size before relaxing)
- .debug_str     0x0000000000008e84      0x641 esp-idf/bootloader_support/libbootloader_support.a(bootloader_console.c.obj)
-                                       0x400e (size before relaxing)
- .debug_str     0x00000000000094c5      0x1ea esp-idf/esp_hw_support/libesp_hw_support.a(cpu_util.c.obj)
-                                       0x364e (size before relaxing)
- .debug_str     0x00000000000096af      0x5fb esp-idf/esp_hw_support/libesp_hw_support.a(rtc_clk.c.obj)
-                                       0x441d (size before relaxing)
- .debug_str     0x0000000000009caa      0x115 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_clk_init.c.obj)
-                                       0x3cad (size before relaxing)
- .debug_str     0x0000000000009dbf       0xf7 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_init.c.obj)
-                                       0x3761 (size before relaxing)
- .debug_str     0x0000000000009eb6      0x1e4 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
-                                       0x31b6 (size before relaxing)
- .debug_str     0x000000000000a09a       0xa3 esp-idf/esp_rom/libesp_rom.a(esp_rom_uart.c.obj)
-                                       0x1081 (size before relaxing)
- .debug_str     0x000000000000a13d       0xa0 esp-idf/log/liblog.a(log_noos.c.obj)
-                                       0x1200 (size before relaxing)
- .debug_str     0x000000000000a1dd      0x414 esp-idf/hal/libhal.a(wdt_hal_iram.c.obj)
-                                       0x2505 (size before relaxing)
- .debug_str     0x000000000000a5f1       0xba esp-idf/hal/libhal.a(mpu_hal.c.obj)
-                                       0x122a (size before relaxing)
- .debug_str     0x000000000000a6ab       0xa3 esp-idf/hal/libhal.a(efuse_hal.c.obj)
-                                        0x6cf (size before relaxing)
- .debug_str     0x000000000000a74e      0x118 esp-idf/hal/libhal.a(efuse_hal.c.obj)
-                                        0x762 (size before relaxing)
- .debug_str     0x000000000000a866      0x3cd esp-idf/spi_flash/libspi_flash.a(spi_flash_rom_patch.c.obj)
-                                       0x262a (size before relaxing)
+.debug_str      0x0000000000000000     0xac6e
+ .debug_str     0x0000000000000000     0x11be esp-idf/bootloader_support/libbootloader_support.a(bootloader_panic.c.obj)
+                                       0x126b (size before relaxing)
+ .debug_str     0x00000000000011be      0x6c8 esp-idf/main/libmain.a(bootloader_start.c.obj)
+                                        0xd7f (size before relaxing)
+ .debug_str     0x0000000000001886     0x2caf esp-idf/bootloader_support/libbootloader_support.a(bootloader_common.c.obj)
+                                       0x3a63 (size before relaxing)
+ .debug_str     0x0000000000004535     0x1aba esp-idf/bootloader_support/libbootloader_support.a(bootloader_flash.c.obj)
+                                       0x317e (size before relaxing)
+ .debug_str     0x0000000000005fef      0x997 esp-idf/bootloader_support/libbootloader_support.a(bootloader_utility.c.obj)
+                                       0x4bbb (size before relaxing)
+ .debug_str     0x0000000000006986      0x733 esp-idf/bootloader_support/libbootloader_support.a(esp_image_format.c.obj)
+                                       0x22c0 (size before relaxing)
+ .debug_str     0x00000000000070b9       0xcf esp-idf/bootloader_support/libbootloader_support.a(flash_partitions.c.obj)
+                                        0x8b1 (size before relaxing)
+ .debug_str     0x0000000000007188       0x7f esp-idf/bootloader_support/libbootloader_support.a(bootloader_console_loader.c.obj)
+                                        0x219 (size before relaxing)
+ .debug_str     0x0000000000007207      0x106 esp-idf/bootloader_support/libbootloader_support.a(bootloader_sha.c.obj)
+                                       0x12c3 (size before relaxing)
+ .debug_str     0x000000000000730d       0x64 esp-idf/bootloader_support/libbootloader_support.a(bootloader_soc.c.obj)
+                                        0x1b1 (size before relaxing)
+ .debug_str     0x0000000000007371      0x559 esp-idf/bootloader_support/libbootloader_support.a(bootloader_esp32.c.obj)
+                                       0x5d44 (size before relaxing)
+ .debug_str     0x00000000000078ca      0x1f2 esp-idf/bootloader_support/libbootloader_support.a(bootloader_common_loader.c.obj)
+                                       0x369d (size before relaxing)
+ .debug_str     0x0000000000007abc      0x21b esp-idf/bootloader_support/libbootloader_support.a(bootloader_clock_init.c.obj)
+                                       0x37cd (size before relaxing)
+ .debug_str     0x0000000000007cd7       0x9c esp-idf/bootloader_support/libbootloader_support.a(bootloader_mem.c.obj)
+                                       0x11b8 (size before relaxing)
+ .debug_str     0x0000000000007d73       0x85 esp-idf/bootloader_support/libbootloader_support.a(bootloader_random.c.obj)
+                                       0x11f6 (size before relaxing)
+ .debug_str     0x0000000000007df8      0xbf9 esp-idf/bootloader_support/libbootloader_support.a(bootloader_random_esp32.c.obj)
+                                       0x45c7 (size before relaxing)
+ .debug_str     0x00000000000089f1      0x10a esp-idf/bootloader_support/libbootloader_support.a(bootloader_flash_config_esp32.c.obj)
+                                        0xde8 (size before relaxing)
+ .debug_str     0x0000000000008afb       0xb4 esp-idf/bootloader_support/libbootloader_support.a(bootloader_efuse.c.obj)
+                                        0x6d9 (size before relaxing)
+ .debug_str     0x0000000000008baf      0x2f6 esp-idf/bootloader_support/libbootloader_support.a(bootloader_init.c.obj)
+                                       0x4523 (size before relaxing)
+ .debug_str     0x0000000000008ea5      0x643 esp-idf/bootloader_support/libbootloader_support.a(bootloader_console.c.obj)
+                                       0x400b (size before relaxing)
+ .debug_str     0x00000000000094e8      0x1ec esp-idf/esp_hw_support/libesp_hw_support.a(cpu_util.c.obj)
+                                       0x364b (size before relaxing)
+ .debug_str     0x00000000000096d4      0x5fd esp-idf/esp_hw_support/libesp_hw_support.a(rtc_clk.c.obj)
+                                       0x441a (size before relaxing)
+ .debug_str     0x0000000000009cd1      0x117 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_clk_init.c.obj)
+                                       0x3caa (size before relaxing)
+ .debug_str     0x0000000000009de8       0xf9 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_init.c.obj)
+                                       0x375e (size before relaxing)
+ .debug_str     0x0000000000009ee1      0x1e6 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
+                                       0x31b3 (size before relaxing)
+ .debug_str     0x000000000000a0c7       0xa5 esp-idf/esp_rom/libesp_rom.a(esp_rom_uart.c.obj)
+                                       0x107e (size before relaxing)
+ .debug_str     0x000000000000a16c       0xa2 esp-idf/log/liblog.a(log_noos.c.obj)
+                                       0x11fd (size before relaxing)
+ .debug_str     0x000000000000a20e      0x416 esp-idf/hal/libhal.a(wdt_hal_iram.c.obj)
+                                       0x2502 (size before relaxing)
+ .debug_str     0x000000000000a624       0xbc esp-idf/hal/libhal.a(mpu_hal.c.obj)
+                                       0x1227 (size before relaxing)
+ .debug_str     0x000000000000a6e0       0xa5 esp-idf/hal/libhal.a(efuse_hal.c.obj)
+                                        0x6cc (size before relaxing)
+ .debug_str     0x000000000000a785      0x11a esp-idf/hal/libhal.a(efuse_hal.c.obj)
+                                        0x75f (size before relaxing)
+ .debug_str     0x000000000000a89f      0x3cf esp-idf/spi_flash/libspi_flash.a(spi_flash_rom_patch.c.obj)
+                                       0x2627 (size before relaxing)
 
 Cross Reference Table
 
@@ -4318,12 +4318,12 @@ TIMERG1                                           esp-idf/hal/libhal.a(wdt_hal_i
 UART0                                             esp-idf/esp_rom/libesp_rom.a(esp_rom_uart.c.obj)
 UART1                                             esp-idf/esp_rom/libesp_rom.a(esp_rom_uart.c.obj)
 UART2                                             esp-idf/esp_rom/libesp_rom.a(esp_rom_uart.c.obj)
-_ITM_deregisterTMCloneTable                       c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
-_ITM_registerTMCloneTable                         c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
-__DTOR_END__                                      c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
-                                                  c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
-__TMC_END__                                       c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
-                                                  c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+_ITM_deregisterTMCloneTable                       /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+_ITM_registerTMCloneTable                         /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+__DTOR_END__                                      /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
+                                                  /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+__TMC_END__                                       /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtend.o
+                                                  /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
 __assert_func                                     esp-idf/bootloader_support/libbootloader_support.a(bootloader_panic.c.obj)
                                                   esp-idf/log/liblog.a(log_noos.c.obj)
                                                   esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
@@ -4332,17 +4332,17 @@ __assert_func                                     esp-idf/bootloader_support/lib
                                                   esp-idf/bootloader_support/libbootloader_support.a(bootloader_sha.c.obj)
                                                   esp-idf/bootloader_support/libbootloader_support.a(esp_image_format.c.obj)
                                                   esp-idf/bootloader_support/libbootloader_support.a(bootloader_flash.c.obj)
-__bswapsi2                                        c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_bswapsi2.o)
+__bswapsi2                                        /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_bswapsi2.o)
                                                   esp-idf/bootloader_support/libbootloader_support.a(bootloader_sha.c.obj)
-__deregister_frame_info                           c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
-__divdi3                                          c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_divdi3.o)
+__deregister_frame_info                           /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+__divdi3                                          /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_divdi3.o)
                                                   esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
                                                   esp-idf/esp_hw_support/libesp_hw_support.a(rtc_clk_init.c.obj)
                                                   esp-idf/bootloader_support/libbootloader_support.a(bootloader_init.c.obj)
-__dso_handle                                      c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+__dso_handle                                      /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
 __getreent                                        esp-idf/main/libmain.a(bootloader_start.c.obj)
-__register_frame_info                             c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
-__udivdi3                                         c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti\libgcc.a(_udivdi3.o)
+__register_frame_info                             /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crtbegin.o
+__udivdi3                                         /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/libgcc.a(_udivdi3.o)
                                                   esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
                                                   esp-idf/esp_hw_support/libesp_hw_support.a(rtc_clk_init.c.obj)
                                                   esp-idf/bootloader_support/libbootloader_support.a(bootloader_init.c.obj)
@@ -4354,13 +4354,13 @@ _data_end                                         esp-idf/bootloader_support/lib
 _data_start                                       esp-idf/bootloader_support/libbootloader_support.a(bootloader_esp32.c.obj)
 _dram_end                                         esp-idf/bootloader_support/libbootloader_support.a(esp_image_format.c.obj)
 _dram_start                                       esp-idf/bootloader_support/libbootloader_support.a(esp_image_format.c.obj)
-_fini                                             c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crti.o
-_global_impure_ptr                                c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-impure.o)
+_fini                                             /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crti.o
+_global_impure_ptr                                /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-impure.o)
                                                   esp-idf/main/libmain.a(bootloader_start.c.obj)
-_init                                             c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crti.o
+_init                                             /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/no-rtti/crti.o
 _loader_text_end                                  esp-idf/bootloader_support/libbootloader_support.a(esp_image_format.c.obj)
 _loader_text_start                                esp-idf/bootloader_support/libbootloader_support.a(esp_image_format.c.obj)
-_start                                            c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
+_start                                            /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
 abort                                             esp-idf/bootloader_support/libbootloader_support.a(bootloader_panic.c.obj)
                                                   esp-idf/hal/libhal.a(wdt_hal_iram.c.obj)
                                                   esp-idf/esp_hw_support/libesp_hw_support.a(rtc_clk_init.c.obj)
@@ -4641,18 +4641,18 @@ g_rom_spiflash_chip                               esp-idf/spi_flash/libspi_flash
 g_rom_spiflash_dummy_len_plus                     esp-idf/spi_flash/libspi_flash.a(spi_flash_rom_patch.c.obj)
                                                   esp-idf/bootloader_support/libbootloader_support.a(bootloader_flash_config_esp32.c.obj)
                                                   esp-idf/bootloader_support/libbootloader_support.a(bootloader_flash.c.obj)
-main                                              c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
-memcmp                                            c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcmp.o)
+main                                              /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/crt0.o
+memcmp                                            /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcmp.o)
                                                   esp-idf/bootloader_support/libbootloader_support.a(flash_partitions.c.obj)
                                                   esp-idf/bootloader_support/libbootloader_support.a(esp_image_format.c.obj)
                                                   esp-idf/bootloader_support/libbootloader_support.a(bootloader_common.c.obj)
-memcpy                                            c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memcpy.o)
+memcpy                                            /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memcpy.o)
                                                   esp-idf/esp_hw_support/libesp_hw_support.a(cpu_util.c.obj)
                                                   esp-idf/bootloader_support/libbootloader_support.a(bootloader_common_loader.c.obj)
                                                   esp-idf/bootloader_support/libbootloader_support.a(esp_image_format.c.obj)
                                                   esp-idf/bootloader_support/libbootloader_support.a(bootloader_utility.c.obj)
                                                   esp-idf/bootloader_support/libbootloader_support.a(bootloader_common.c.obj)
-memset                                            c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-memset.o)
+memset                                            /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-memset.o)
                                                   esp-idf/hal/libhal.a(wdt_hal_iram.c.obj)
                                                   esp-idf/bootloader_support/libbootloader_support.a(bootloader_init.c.obj)
                                                   esp-idf/bootloader_support/libbootloader_support.a(esp_image_format.c.obj)
@@ -4735,13 +4735,13 @@ rtc_vddsdio_set_config                            esp-idf/esp_hw_support/libesp_
                                                   esp-idf/bootloader_support/libbootloader_support.a(bootloader_common.c.obj)
 soc_hal_stall_core                                esp-idf/esp_hw_support/libesp_hw_support.a(cpu_util.c.obj)
 soc_hal_unstall_core                              esp-idf/esp_hw_support/libesp_hw_support.a(cpu_util.c.obj)
-strcspn                                           c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strcspn.o)
+strcspn                                           /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strcspn.o)
                                                   esp-idf/bootloader_support/libbootloader_support.a(bootloader_common.c.obj)
-strlen                                            c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strlen.o)
+strlen                                            /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strlen.o)
                                                   esp-idf/bootloader_support/libbootloader_support.a(bootloader_common.c.obj)
-strncpy                                           c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strncpy.o)
+strncpy                                           /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strncpy.o)
                                                   esp-idf/bootloader_support/libbootloader_support.a(bootloader_common.c.obj)
-strstr                                            c:/esp4.4/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti\libc.a(lib_a-strstr.o)
+strstr                                            /Users/thom/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.4.0/../../../../xtensa-esp32-elf/lib/no-rtti/libc.a(lib_a-strstr.o)
                                                   esp-idf/bootloader_support/libbootloader_support.a(bootloader_common.c.obj)
 wdt_hal_config_stage                              esp-idf/hal/libhal.a(wdt_hal_iram.c.obj)
                                                   esp-idf/bootloader_support/libbootloader_support.a(bootloader_init.c.obj)
