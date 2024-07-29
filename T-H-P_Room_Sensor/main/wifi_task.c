@@ -89,6 +89,7 @@ int retry_num = 0;
  * Functions code
 **********************************/
 
+
 int wifi_search_list(wifi_ap_record_t* scan_list, wifi_id_t* wifi_list, int num)
 {
     int wifi_find = -1;
@@ -157,6 +158,7 @@ static void wifi_ip_event_handler(void* arg, esp_event_base_t event_base, int32_
             case WIFI_EVENT_STA_CONNECTED:
                 ESP_LOGI(TAG_EVENT, "Wifi was connected, to ssid wifi: %s", wifi_config.sta.ssid);
                 xEventGroupSetBits(s_wifi_event_group, WIFI_CONNECTED_BIT);
+                xEventGroupSetBits(gpio_event_group, GPIO_ON);
                 break;
 
             case WIFI_EVENT_STA_DISCONNECTED:
@@ -314,6 +316,8 @@ void task_network(void* pvParameter)
             case WIFI_STATE_INIT_SYSTEM:
                 if(wifi_event_inited == false)
                 {
+                    xEventGroupSetBits(gpio_event_group, GPIO_BLINK);
+                    
                     ret = esp_wifi_init(&cfg);
                     if(ret != ESP_OK)
                     {

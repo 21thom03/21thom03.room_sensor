@@ -8,7 +8,6 @@ static char* TAG = "GPIO";
 void task_gpio(void* pvParameter)
 {
     int gpio_val;
-    bool blink_var = false;
     gpio_event_group = xEventGroupCreate();
     EventBits_t ret_bits;
 

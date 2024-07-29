@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "T-H-P_Room_Sensor",
-    "project_version":    "41391a3-dirty",
+    "project_version":    "b1e2dd6-dirty",
     "project_path":       "C:/Users/thomas.dacosta/Documents/21thom03.room_sensor/T-H-P_Room_Sensor",
     "idf_path":           "C:/Users/thomas.dacosta/esp/v4.4/esp-idf",
     "build_dir":          "C:/Users/thomas.dacosta/Documents/21thom03.room_sensor/T-H-P_Room_Sensor/build",
@@ -878,7 +878,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "C:/Users/thomas.dacosta/Documents/21thom03.room_sensor/T-H-P_Room_Sensor/build/esp-idf/main/libmain.a",
-            "sources": [ "C:/Users/thomas.dacosta/Documents/21thom03.room_sensor/T-H-P_Room_Sensor/main/gpio_task.c", "C:/Users/thomas.dacosta/Documents/21thom03.room_sensor/T-H-P_Room_Sensor/main/T-H-P_Room_Sensor.c" ],
+            "sources": [ "C:/Users/thomas.dacosta/Documents/21thom03.room_sensor/T-H-P_Room_Sensor/main/gpio_task.c", "C:/Users/thomas.dacosta/Documents/21thom03.room_sensor/T-H-P_Room_Sensor/main/wifi_task.c", "C:/Users/thomas.dacosta/Documents/21thom03.room_sensor/T-H-P_Room_Sensor/main/T-H-P_Room_Sensor.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {

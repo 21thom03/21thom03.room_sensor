@@ -57,9 +57,18 @@ void app_main(void)
 	}
 	ESP_ERROR_CHECK(ret);
 
-    vTaskDelay(10);
-	xTaskCreate(&task_gpio, "GPIO-task", 1054, NULL, tskIDLE_PRIORITY, NULL);
-    xTaskCreate(task_network, "task-network", 10 * 1024, NULL, 7, NULL);
+    BaseType_t task_ret = xTaskCreate(task_gpio, "GPIO-Task", 2*1054, NULL, 3, NULL);
+    if(task_ret != pdPASS)
+    {
+        xTaskCreate(task_network, "task-network", 10 * 1024, NULL, 7, NULL);
+    } else if(task_ret == errCOULD_NOT_ALLOCATE_REQUIRED_MEMORY){
+        ESP_LOGE("ERROR", "errCOULD_NOT_ALLOCATE_REQUIRED_MEMORY");
+    } else {
+        ESP_LOGE("ERROR", "GPIO-task doesn't create!");
+    }
+
+    
+
 
     // vTaskDelay(100);
     // xEventGroupSetBits(gpio_event_group, GPIO_ON);
