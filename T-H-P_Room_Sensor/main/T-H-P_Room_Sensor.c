@@ -58,14 +58,14 @@ void app_main(void)
 	ESP_ERROR_CHECK(ret);
 
     vTaskDelay(10);
-	xTaskCreate(task_gpio, "GPIO-task", 10*1024, NULL, 7, NULL);
+	xTaskCreate(&task_gpio, "GPIO-task", 1054, NULL, tskIDLE_PRIORITY, NULL);
 
     vTaskDelay(100);
-    GPIO_var = GPIO_OFF;
+    xEventGroupSetBits(gpio_event_group, GPIO_ON);
     vTaskDelay(1000);
-    GPIO_var = GPIO_BLINK;
+    xEventGroupSetBits(gpio_event_group, GPIO_BLINK);
     vTaskDelay(1000);
-    GPIO_var = GPIO_OFF;
+    xEventGroupSetBits(gpio_event_group, GPIO_OFF);
 
     
     // for(int try_wifi = 0; (try_wifi < WIFI_NUMBER) && (ret != ESP_OK); try_wifi ++)

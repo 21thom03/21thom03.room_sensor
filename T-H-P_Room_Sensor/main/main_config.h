@@ -54,14 +54,13 @@ wifi_id_t wifi[WIFI_NUMBER];
  * GPIO constante
 ***********************************/
 #define GPIO_PIN                32
-#define GPIO_BLINK_FREQ_HZ      1000  //in Hz
+#define GPIO_BLINK_FREQ_HZ      500  //in Hz
 
-enum {
-    GPIO_OFF                    = 0x0,
-    GPIO_ON                     = 0x1,
-    GPIO_BLINK                  = 0x2,
-};
+/*Event BIT*/
+#define GPIO_OFF                BIT0
+#define GPIO_ON                 BIT1
+#define GPIO_BLINK              BIT2
 
-uint8_t GPIO_var;
+EventGroupHandle_t gpio_event_group;
 
 #endif /* end of MAIN_CONFIG_H_ */
