@@ -54,7 +54,7 @@ wifi_id_t wifi[WIFI_NUMBER];
  * GPIO constante
 ***********************************/
 #define GPIO_PIN                32
-#define GPIO_BLINK_FREQ_HZ      300  //in Hz
+#define GPIO_BLINK_FREQ_HZ      50  //in Hz
 
 /*Event BIT*/
 #define GPIO_OFF                BIT0

@@ -1,4 +1,3 @@
-C:/Users/thomas.dacosta/Documents/21thom03.room_sensor/T-H-P_Room_Sensor/build/CMakeFiles/mconf-idf.dir
 C:/Users/thomas.dacosta/Documents/21thom03.room_sensor/T-H-P_Room_Sensor/build/CMakeFiles/menuconfig.dir
 C:/Users/thomas.dacosta/Documents/21thom03.room_sensor/T-H-P_Room_Sensor/build/CMakeFiles/confserver.dir
 C:/Users/thomas.dacosta/Documents/21thom03.room_sensor/T-H-P_Room_Sensor/build/CMakeFiles/bootloader.dir

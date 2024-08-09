@@ -76,6 +76,7 @@ wifi_scan_config_t config_wifi_scan = {
 };
 int know_wifi = -1;
 int scan_retry = 0;
+int wifi_try_i = WIFI_NUMBER;
 
 /***************Event Variables */
 esp_event_handler_instance_t instance_any_id;
@@ -84,6 +85,7 @@ EventGroupHandle_t s_wifi_event_group;
 ip_event_got_ip_t* ip_event;
 
 int retry_num = 0;
+EventBits_t bits;
 
 /**********************************
  * Functions code
@@ -109,12 +111,14 @@ int wifi_search_list(wifi_ap_record_t* scan_list, wifi_id_t* wifi_list, int num)
 void wifi_display(wifi_ap_record_t* scan_list, int num)
 {
     // size_t scan_number = sizeof(&scan_list) / sizeof(wifi_ap_record_t);
+    printf("\n\n");
     ESP_LOGI(TAG, " %d wifi was scanned!", num);
     ESP_LOGI(TAG, "*********Wifi Scan list*********");
     for(int i_display = 0; i_display < num; i_display ++)
     {
         ESP_LOGI(TAG, "Wifi[%d] SSID : %s", i_display, scan_list[i_display].ssid);
     }
+    printf("\n");
 }
 
 static void wifi_ip_event_handler(void* arg, esp_event_base_t event_base, int32_t event_id, void* event_data)
@@ -159,6 +163,7 @@ static void wifi_ip_event_handler(void* arg, esp_event_base_t event_base, int32_
                 ESP_LOGI(TAG_EVENT, "Wifi was connected, to ssid wifi: %s", wifi_config.sta.ssid);
                 xEventGroupSetBits(s_wifi_event_group, WIFI_CONNECTED_BIT);
                 xEventGroupSetBits(gpio_event_group, GPIO_ON);
+                retry_num = 0;
                 break;
 
             case WIFI_EVENT_STA_DISCONNECTED:
@@ -169,6 +174,7 @@ static void wifi_ip_event_handler(void* arg, esp_event_base_t event_base, int32_
                 } else {
                     ESP_LOGE(TAG, "Connection to wifi with ssid : %s and password : %s, was failed",  wifi_config.sta.ssid, wifi_config.sta.password);
                     xEventGroupSetBits(s_wifi_event_group, WIFI_FAIL_BIT);
+                    xEventGroupSetBits(gpio_event_group, GPIO_OFF);
                 }
                 break;
             
@@ -202,7 +208,6 @@ static void wifi_ip_event_handler(void* arg, esp_event_base_t event_base, int32_
                     break;
                 }
 
-
             case IP_EVENT_GOT_IP6:
                 ip_event = (ip_event_got_ip_t*) event_data;
                 ESP_LOGI(TAG_EVENT, "");
@@ -210,6 +215,10 @@ static void wifi_ip_event_handler(void* arg, esp_event_base_t event_base, int32_
 
             case IP_EVENT_STA_LOST_IP:
                 ESP_LOGE(TAG_EVENT, "Ip address lost!");
+                break;
+
+            case IP_EVENT_AP_STAIPASSIGNED:
+                ESP_LOGE(TAG_EVENT, "Ip not assigned!");
                 break;
         }
     }
@@ -408,26 +417,50 @@ void task_network(void* pvParameter)
                     ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_config));
                         
                     ret = esp_wifi_start();
-                    EventBits_t bits = xEventGroupWaitBits(s_wifi_event_group,
+                    bits = xEventGroupWaitBits(s_wifi_event_group,
                         WIFI_CONNECTED_BIT | WIFI_FAIL_BIT,
-                        pdFALSE,
+                        pdTRUE,
                         pdFALSE,
                         portMAX_DELAY);
 
                     if(bits & WIFI_CONNECTED_BIT)
                     {
-                    next_wifi_state_id = WIFI_STATE_CONNECTED;
+                        next_wifi_state_id = WIFI_STATE_CONNECTED;
                     } else if(bits & WIFI_FAIL_BIT)
+                    {
+                        printf("%d", bits);
+                        next_wifi_state_id = WIFI_STATE_CONNECT_FAILED;
+                    }
+                break;
+
+            case WIFI_STATE_CONNECTED:
+                    printf("%d", bits);
+                bits = xEventGroupWaitBits(s_wifi_event_group,
+                        WIFI_FAIL_BIT,
+                        pdTRUE,
+                        pdFALSE,
+                        portMAX_DELAY);
+
+                if(bits & WIFI_FAIL_BIT)
                     {
                         next_wifi_state_id = WIFI_STATE_CONNECT_FAILED;
                     }
                 break;
 
-            case WIFI_STATE_CONNECT_FAILED:  
+            case WIFI_STATE_CONNECT_FAILED:
+                if(wifi_try_i > 0)
+                {
+                    next_wifi_state_id = WIFI_STATE_SWITCH;
+                    wifi_try_i --;
+                } else {
+                    ESP_LOGE(TAG, "No wifi found!");
+                    next_wifi_state_id = -1;
+                }
+                break;
 
-            case WIFI_STATE_CONNECTED:
-
-            case WIFI_STATE_SWITCH:     
+            case WIFI_STATE_SWITCH:
+                ESP_LOGI(TAG, "Try to switch Wi-Fi!");
+                next_wifi_state_id = WIFI_STATE_SCAN_BOOT;   
                 break;
         }
     }

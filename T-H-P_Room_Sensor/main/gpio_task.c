@@ -28,11 +28,11 @@ void task_gpio(void* pvParameter)
             case GPIO_BLINK:
                 ESP_LOGI(TAG, "GPIO %d, blink", GPIO_PIN);
                 gpio_val = gpio_get_level(GPIO_PIN);
-                for(int i =0; i == 10; i++)
+                for(int i =0; i < 10; i++)
                 {
                     gpio_set_level(GPIO_PIN, gpio_val);
                     gpio_val = !gpio_val;
-                    vTaskDelay(GPIO_BLINK_FREQ_HZ/portTICK_PERIOD_MS);
+                    vTaskDelay(GPIO_BLINK_FREQ_HZ);
                 }
                 xEventGroupClearBits(gpio_event_group, ret_bits);
                 break;
